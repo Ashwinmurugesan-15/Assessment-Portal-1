@@ -1,0 +1,1226 @@
+[
+  {
+    "assessment_id": "mezevu84q0j",
+    "user_id": "7bv9ucjdmth",
+    "result": {
+      "assessment_id": "mezevu84q0j",
+      "user_id": "7bv9ucjdmth",
+      "score": 33.33333333333333,
+      "max_score": 100,
+      "total_questions": 3,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "uvt79ljgey",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "React Hooks, medium difficulty is known for its scalability."
+        },
+        {
+          "question_id": "dduq8ujboz",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": "Unless React Hooks, medium difficulty is actually a fruit, this is the correct answer."
+        },
+        {
+          "question_id": "pul31pk5m09",
+          "submitted": "A",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "Optimization is key for advanced usage."
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 10.307,
+        "accuracy_percent": 33.33333333333333,
+        "avg_time_per_question_seconds": 3.4356666666666666
+      }
+    },
+    "timestamp": "2025-11-21T17:30:24.113Z"
+  },
+  {
+    "assessment_id": "zgf1txdowde",
+    "user_id": "4i49664h3go",
+    "result": {
+      "assessment_id": "zgf1txdowde",
+      "user_id": "4i49664h3go",
+      "score": 33.33333333333333,
+      "max_score": 100,
+      "total_questions": 3,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "2x6nwatyfy4",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "in node js is mainly used to optimize and improve system performance."
+        },
+        {
+          "question_id": "rmkgvvvd8t",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "Scalability is one of the defining features of in node js."
+        },
+        {
+          "question_id": "hre2jw0xkao",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": "in node js is ideal for scenarios requiring strong data management capabilities."
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 133.227,
+        "accuracy_percent": 33.33333333333333,
+        "avg_time_per_question_seconds": 44.409
+      }
+    },
+    "timestamp": "2025-11-22T12:56:10.305Z"
+  },
+  {
+    "assessment_id": "0b08tdmcwt4k",
+    "user_id": "wqn3xe0yleq",
+    "result": {
+      "assessment_id": "0b08tdmcwt4k",
+      "user_id": "wqn3xe0yleq",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "x09wxprgar",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 9.683,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 9.683
+      }
+    },
+    "timestamp": "2025-11-23T05:29:03.566Z"
+  },
+  {
+    "assessment_id": "0b08tdmcwt4k",
+    "user_id": "pek911l1m89",
+    "result": {
+      "assessment_id": "0b08tdmcwt4k",
+      "user_id": "pek911l1m89",
+      "score": 100,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "x09wxprgar",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 2.3,
+        "accuracy_percent": 100,
+        "avg_time_per_question_seconds": 2.3
+      }
+    },
+    "timestamp": "2025-11-24T04:31:01.564Z"
+  },
+  {
+    "assessment_id": "0b08tdmcwt4k",
+    "user_id": "zicf4xgvnc",
+    "result": {
+      "assessment_id": "0b08tdmcwt4k",
+      "user_id": "zicf4xgvnc",
+      "score": 100,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "x09wxprgar",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 2.517,
+        "accuracy_percent": 100,
+        "avg_time_per_question_seconds": 2.517
+      }
+    },
+    "timestamp": "2025-11-24T04:31:12.637Z"
+  },
+  {
+    "assessment_id": "0b08tdmcwt4k",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "0b08tdmcwt4k",
+      "user_id": "g8xtubw73n5",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "x09wxprgar",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 1.922,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 1.922
+      },
+      "graded_at": "2025-11-24T06:36:39.238Z"
+    },
+    "timestamp": "2025-11-24T06:36:39.239Z"
+  },
+  {
+    "assessment_id": "zgf1txdowde",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "zgf1txdowde",
+      "user_id": "g8xtubw73n5",
+      "score": 33.33333333333333,
+      "max_score": 100,
+      "total_questions": 3,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "2x6nwatyfy4",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": "in node js is mainly used to optimize and improve system performance."
+        },
+        {
+          "question_id": "rmkgvvvd8t",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "Scalability is one of the defining features of in node js."
+        },
+        {
+          "question_id": "hre2jw0xkao",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "in node js is ideal for scenarios requiring strong data management capabilities."
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 4.74,
+        "accuracy_percent": 33.33333333333333,
+        "avg_time_per_question_seconds": 1.58
+      },
+      "graded_at": "2025-11-24T06:45:04.335Z"
+    },
+    "timestamp": "2025-11-24T06:45:04.335Z"
+  },
+  {
+    "assessment_id": "vdyrzz09ut",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "vdyrzz09ut",
+      "user_id": "g8xtubw73n5",
+      "score": 100,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "jxsbgg633ct",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 3.138,
+        "accuracy_percent": 100,
+        "avg_time_per_question_seconds": 3.138
+      },
+      "graded_at": "2025-11-24T07:20:42.810Z"
+    },
+    "timestamp": "2025-11-24T07:20:42.810Z"
+  },
+  {
+    "assessment_id": "cz7d6ocavzb",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "cz7d6ocavzb",
+      "user_id": "g8xtubw73n5",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "cfksxrogimk",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 4.443,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 4.443
+      },
+      "graded_at": "2025-11-24T08:47:32.213Z"
+    },
+    "timestamp": "2025-11-24T08:47:32.214Z"
+  },
+  {
+    "assessment_id": "73nzxifkdn6",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "73nzxifkdn6",
+      "user_id": "g8xtubw73n5",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "d0giy8ujgea",
+          "submitted": "D",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 4.299,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 4.299
+      },
+      "graded_at": "2025-11-24T09:29:08.256Z"
+    },
+    "timestamp": "2025-11-24T09:29:08.256Z"
+  },
+  {
+    "assessment_id": "du2qhsnrh1v",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "du2qhsnrh1v",
+      "user_id": "g8xtubw73n5",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "ioos5l35jng",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 45.028,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 45.028
+      },
+      "graded_at": "2025-11-24T09:30:47.377Z"
+    },
+    "timestamp": "2025-11-24T09:30:47.377Z"
+  },
+  {
+    "assessment_id": "6foe0w30d5g",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "6foe0w30d5g",
+      "user_id": "g8xtubw73n5",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "jyzh7mftk9",
+          "submitted": "",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 3.394,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 3.394
+      },
+      "graded_at": "2025-11-24T11:35:47.927Z"
+    },
+    "timestamp": "2025-11-24T11:35:47.927Z"
+  },
+  {
+    "assessment_id": "rnk0vtqami9",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "rnk0vtqami9",
+      "user_id": "g8xtubw73n5",
+      "score": 15,
+      "max_score": 100,
+      "total_questions": 20,
+      "correct_count": 3,
+      "detailed": [
+        {
+          "question_id": "v41dkhahpbf",
+          "submitted": "B",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "btig6lvyenm",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "pzoaca5vdk",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "98cwyc2pld",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "lxb2fhfu72g",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "9cldq78iui",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "amyopavq3o6",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "gq4vuw7jpmb",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "x0onpb2j9tn",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "7oq08580mvx",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "61e9d79mspk",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "8ueruu7c0a",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "0g1zvxf3s1l9",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "0xd8tk9yawbh",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "lu1i3qfz9u",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "s8xgjh82ey",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "wdy6n662dhd",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "l374hjv14h",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "v7stfdolazo",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "chhm8sv2jco",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 33.725,
+        "accuracy_percent": 15,
+        "avg_time_per_question_seconds": 1.68625
+      },
+      "graded_at": "2025-11-26T11:02:07.899Z"
+    },
+    "timestamp": "2025-11-26T11:02:07.899Z"
+  },
+  {
+    "assessment_id": "ttveda9qo4e",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "ttveda9qo4e",
+      "user_id": "g8xtubw73n5",
+      "score": 25,
+      "max_score": 100,
+      "total_questions": 20,
+      "correct_count": 5,
+      "detailed": [
+        {
+          "question_id": "15tz3zfsnz1",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "po9kbc7itne",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "psp0pgqwuzg",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "rcjdhadfs8n",
+          "submitted": "D",
+          "correct": "D",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "d9u9i9bqlor",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "6b1hlzq3654",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "kptgyl60mpi",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "9k9umpuvuwk",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "28a94geeuw8",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "kkz7a0nxma",
+          "submitted": "D",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "bwv0mwq1r2",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "ynwhbyfmtj",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "bpt0ydno9od",
+          "submitted": "D",
+          "correct": "D",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        },
+        {
+          "question_id": "ko0zeqpgpsn",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "f46yzvve56",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "l9eb388asmr",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "cps8hi1iho4",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "lqrz2qj1xt",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "he72obgx3qj",
+          "submitted": "D",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": null
+        },
+        {
+          "question_id": "w06vlbvdsrs",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1,
+          "explanation": null
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 98.323,
+        "accuracy_percent": 25,
+        "avg_time_per_question_seconds": 4.91615
+      },
+      "graded_at": "2025-11-26T11:06:42.815Z"
+    },
+    "timestamp": "2025-11-26T11:06:42.815Z"
+  },
+  {
+    "assessment_id": "zgnmxe2shq",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "zgnmxe2shq",
+      "user_id": "g8xtubw73n5",
+      "score": 45,
+      "max_score": 100,
+      "total_questions": 20,
+      "correct_count": 9,
+      "detailed": [
+        {
+          "question_id": "srcniy5teyq",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "ko2ilhch0no",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "9rhy0lbv85t",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "b01vkausnyj",
+          "submitted": "A",
+          "correct": "D",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "15wdhxg752m",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "uhyrg92rph",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "ozdc40074c",
+          "submitted": "D",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "a36dpbc1blk",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "jn1ot45qigs",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "epb2tz8pcz",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "d48bf78rypj",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "ba9bx4nqoqk",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "208mspkwibw",
+          "submitted": "C",
+          "correct": "D",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "0qsmfs5ev7w",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "w04nhcbrfj",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "4i1htdlzos3",
+          "submitted": "D",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "rie1vqvpak",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "89bdrjksiq4",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "36tk8341pq7",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "wu3iuz33yzm",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 41.554,
+        "accuracy_percent": 45,
+        "avg_time_per_question_seconds": 2.0777
+      },
+      "graded_at": "2025-11-26T11:33:02.071Z"
+    },
+    "timestamp": "2025-11-26T11:33:02.071Z"
+  },
+  {
+    "assessment_id": "zgnmxe2shq",
+    "user_id": "5db5q2t27yi",
+    "result": {
+      "assessment_id": "zgnmxe2shq",
+      "user_id": "5db5q2t27yi",
+      "score": 35,
+      "max_score": 100,
+      "total_questions": 20,
+      "correct_count": 7,
+      "detailed": [
+        {
+          "question_id": "srcniy5teyq",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "ko2ilhch0no",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "9rhy0lbv85t",
+          "submitted": "B",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "b01vkausnyj",
+          "submitted": "C",
+          "correct": "D",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "15wdhxg752m",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "uhyrg92rph",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "ozdc40074c",
+          "submitted": "B",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "a36dpbc1blk",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "jn1ot45qigs",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "epb2tz8pcz",
+          "submitted": "D",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "d48bf78rypj",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "ba9bx4nqoqk",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "208mspkwibw",
+          "submitted": "B",
+          "correct": "D",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "0qsmfs5ev7w",
+          "submitted": "B",
+          "correct": "B",
+          "is_correct": true,
+          "points_awarded": 1
+        },
+        {
+          "question_id": "w04nhcbrfj",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "4i1htdlzos3",
+          "submitted": "C",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "rie1vqvpak",
+          "submitted": "C",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "89bdrjksiq4",
+          "submitted": "D",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "36tk8341pq7",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0
+        },
+        {
+          "question_id": "wu3iuz33yzm",
+          "submitted": "C",
+          "correct": "C",
+          "is_correct": true,
+          "points_awarded": 1
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 25.504,
+        "accuracy_percent": 35,
+        "avg_time_per_question_seconds": 1.2752000000000001
+      },
+      "graded_at": "2025-11-26T11:34:26.686Z"
+    },
+    "timestamp": "2025-11-26T11:34:26.686Z"
+  },
+  {
+    "assessment_id": "d3be2loiul",
+    "user_id": "g8xtubw73n5",
+    "result": {
+      "assessment_id": "d3be2loiul",
+      "user_id": "g8xtubw73n5",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 0,
+      "correct_count": 0,
+      "detailed": [],
+      "analytics": {
+        "time_taken_seconds": 0,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 0
+      },
+      "graded_at": "2025-11-26T11:42:12.824Z"
+    },
+    "timestamp": "2025-11-26T11:42:12.825Z"
+  },
+  {
+    "assessment_id": "p83g609vpn",
+    "user_id": "dbdupu8j5p8",
+    "result": {
+      "assessment_id": "p83g609vpn",
+      "user_id": "dbdupu8j5p8",
+      "score": 0,
+      "max_score": 100,
+      "total_questions": 3,
+      "correct_count": 0,
+      "detailed": [
+        {
+          "question_id": "kpj1c8n5wk",
+          "submitted": "B",
+          "correct": "A",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "for linux is mainly used to optimize and improve system performance."
+        },
+        {
+          "question_id": "w11xayvasbl",
+          "submitted": "A",
+          "correct": "B",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "Scalability is one of the defining features of for linux."
+        },
+        {
+          "question_id": "p8q1giy85kl",
+          "submitted": "A",
+          "correct": "C",
+          "is_correct": false,
+          "points_awarded": 0,
+          "explanation": "for linux is ideal for scenarios requiring strong data management capabilities."
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 31.412,
+        "accuracy_percent": 0,
+        "avg_time_per_question_seconds": 10.470666666666666
+      },
+      "graded_at": "2025-11-26T14:10:41.781Z"
+    },
+    "timestamp": "2025-11-26T14:10:41.781Z"
+  },
+  {
+    "assessment_id": "47vjhpaeoh3",
+    "user_id": "dbdupu8j5p8",
+    "result": {
+      "assessment_id": "47vjhpaeoh3",
+      "user_id": "dbdupu8j5p8",
+      "score": 100,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "0ux23vcsym5",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 2.801,
+        "accuracy_percent": 100,
+        "avg_time_per_question_seconds": 2.801
+      },
+      "graded_at": "2025-11-26T13:52:51.818Z"
+    },
+    "timestamp": "2025-11-26T13:52:51.818Z"
+  },
+  {
+    "assessment_id": "5vuy3gc9j8o",
+    "user_id": "dbdupu8j5p8",
+    "result": {
+      "assessment_id": "5vuy3gc9j8o",
+      "user_id": "dbdupu8j5p8",
+      "score": 100,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "43btfuefxz8",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 6.958,
+        "accuracy_percent": 100,
+        "avg_time_per_question_seconds": 6.958
+      },
+      "graded_at": "2025-11-26T15:13:04.740Z"
+    },
+    "timestamp": "2025-11-26T15:13:04.740Z"
+  },
+  {
+    "assessment_id": "4w83hscdqgh",
+    "user_id": "dbdupu8j5p8",
+    "result": {
+      "assessment_id": "4w83hscdqgh",
+      "user_id": "dbdupu8j5p8",
+      "score": 100,
+      "max_score": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "detailed": [
+        {
+          "question_id": "cuwwur05pk9",
+          "submitted": "A",
+          "correct": "A",
+          "is_correct": true,
+          "points_awarded": 1
+        }
+      ],
+      "analytics": {
+        "time_taken_seconds": 231.183,
+        "accuracy_percent": 100,
+        "avg_time_per_question_seconds": 231.183
+      },
+      "graded_at": "2025-11-26T15:12:44.018Z"
+    },
+    "timestamp": "2025-11-26T15:12:44.019Z"
+  }
+]

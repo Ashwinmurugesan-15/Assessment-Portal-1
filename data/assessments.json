@@ -1,0 +1,3443 @@
+[
+  {
+    "id": "sbp98n34pal",
+    "title": "devops mcq",
+    "description": "medium leavel devops mcq",
+    "questions": [
+      {
+        "id": "c2huar38377",
+        "text": "Question 1: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "9trltj9k57j",
+        "text": "Question 2: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "121d7wqfg2nf",
+        "text": "Question 3: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "245szjv3r9o",
+        "text": "Question 4: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "07ljihxs38mn",
+        "text": "Question 5: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "pi4de2mfol",
+        "text": "Question 6: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "6xx00iy7yp",
+        "text": "Question 7: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "pud46hsq81c",
+        "text": "Question 8: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "57nuu86cbpi",
+        "text": "Question 9: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "0nzdz2i6j3d",
+        "text": "Question 10: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "pcov8156t5s",
+        "text": "Question 11: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "bqagnh0xi55",
+        "text": "Question 12: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "w7qe0lb7i2c",
+        "text": "Question 13: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "deq5eaiy6a",
+        "text": "Question 14: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "dq2d5th749m",
+        "text": "Question 15: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "50y1bdp6ren",
+        "text": "Question 16: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "lkxl8ihgvvg",
+        "text": "Question 17: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "znv4im3zkif",
+        "text": "Question 18: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "7688xgnylh",
+        "text": "Question 19: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "6h0p6pugyub",
+        "text": "Question 20: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "648zavphuf9",
+        "text": "Question 21: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "5u6jx9x5p4l",
+        "text": "Question 22: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "19mwpso9fnt",
+        "text": "Question 23: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "sfkvdn5vin",
+        "text": "Question 24: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "1bgnc2iqycfi",
+        "text": "Question 25: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "7x3wy464qph",
+        "text": "Question 26: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "nldih2cc2aq",
+        "text": "Question 27: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "tql967klwf",
+        "text": "Question 28: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "h6yz6hcf4ou",
+        "text": "Question 29: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "k94s8lpppll",
+        "text": "Question 30: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "ddw1xn982lr",
+        "text": "Question 31: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "sr1hcnp2vj",
+        "text": "Question 32: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "ovlmr41fdza",
+        "text": "Question 33: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "ygl5icffav",
+        "text": "Question 34: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "odrku53f3r",
+        "text": "Question 35: What is a key characteristic of devops?",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is scalable and efficient."
+          },
+          {
+            "id": "B",
+            "text": "It is outdated and slow."
+          },
+          {
+            "id": "C",
+            "text": "It is only used for small projects."
+          },
+          {
+            "id": "D",
+            "text": "It has no documentation."
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "devops is known for its scalability.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      }
+    ],
+    "created_by": "rdmmshannnq",
+    "created_at": "2025-11-22T06:11:02.579Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "gnlxpmpqtut",
+    "title": "SER ",
+    "description": "25 questions hard SRE",
+    "questions": [
+      {
+        "id": "4yvimlobpx5",
+        "text": "Q1: What is the primary purpose of General Knowledge?",
+        "options": [
+          {
+            "id": "A",
+            "text": "To improve performance"
+          },
+          {
+            "id": "B",
+            "text": "To increase complexity"
+          },
+          {
+            "id": "C",
+            "text": "To reduce security"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "General Knowledge is mainly used to optimize and improve system performance.",
+        "meta": {
+          "difficulty": "hard"
+        }
+      },
+      {
+        "id": "o1yejcyn3ag",
+        "text": "Q2: Which of the following is a key feature of General Knowledge?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Manual memory management"
+          },
+          {
+            "id": "B",
+            "text": "Scalability and flexibility"
+          },
+          {
+            "id": "C",
+            "text": "Single-threaded execution only"
+          },
+          {
+            "id": "D",
+            "text": "Requires expensive hardware"
+          }
+        ],
+        "correct_option_id": "B",
+        "explanation": "Scalability is one of the defining features of General Knowledge.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "wkrpk3hv2ef",
+        "text": "Q3: When should you use General Knowledge in a project?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Never, it is deprecated"
+          },
+          {
+            "id": "B",
+            "text": "Only for small scripts"
+          },
+          {
+            "id": "C",
+            "text": "When you need robust data handling"
+          },
+          {
+            "id": "D",
+            "text": "For styling only"
+          }
+        ],
+        "correct_option_id": "C",
+        "explanation": "General Knowledge is ideal for scenarios requiring strong data management capabilities.",
+        "meta": {
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-22T12:18:08.918Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "zgf1txdowde",
+    "title": "node js",
+    "description": "node js medium leavel",
+    "questions": [
+      {
+        "id": "2x6nwatyfy4",
+        "text": "Q1: What is the primary purpose of in node js?",
+        "options": [
+          {
+            "id": "A",
+            "text": "To improve performance"
+          },
+          {
+            "id": "B",
+            "text": "To increase complexity"
+          },
+          {
+            "id": "C",
+            "text": "To reduce security"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "in node js is mainly used to optimize and improve system performance.",
+        "meta": {
+          "difficulty": "hard"
+        }
+      },
+      {
+        "id": "rmkgvvvd8t",
+        "text": "Q2: Which of the following is a key feature of in node js?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Manual memory management"
+          },
+          {
+            "id": "B",
+            "text": "Scalability and flexibility"
+          },
+          {
+            "id": "C",
+            "text": "Single-threaded execution only"
+          },
+          {
+            "id": "D",
+            "text": "Requires expensive hardware"
+          }
+        ],
+        "correct_option_id": "B",
+        "explanation": "Scalability is one of the defining features of in node js.",
+        "meta": {
+          "difficulty": "easy"
+        }
+      },
+      {
+        "id": "hre2jw0xkao",
+        "text": "Q3: When should you use in node js in a project?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Never, it is deprecated"
+          },
+          {
+            "id": "B",
+            "text": "Only for small scripts"
+          },
+          {
+            "id": "C",
+            "text": "When you need robust data handling"
+          },
+          {
+            "id": "D",
+            "text": "For styling only"
+          }
+        ],
+        "correct_option_id": "C",
+        "explanation": "in node js is ideal for scenarios requiring strong data management capabilities.",
+        "meta": {
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-22T12:53:39.082Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "0b08tdmcwt4k",
+    "title": "linux pdf",
+    "description": "linux assesments ",
+    "questions": [
+      {
+        "id": "x09wxprgar",
+        "text": "Sample question generated because parsing failed.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Option 1"
+          },
+          {
+            "id": "B",
+            "text": "Option 2"
+          },
+          {
+            "id": "C",
+            "text": "Option 3"
+          },
+          {
+            "id": "D",
+            "text": "Option 4"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-23T05:28:40.959Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "t43y86ee1sd",
+    "title": "new ",
+    "description": "samp",
+    "questions": [
+      {
+        "id": "1styq6c4mz",
+        "text": "Sample question generated because parsing failed.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Option 1"
+          },
+          {
+            "id": "B",
+            "text": "Option 2"
+          },
+          {
+            "id": "C",
+            "text": "Option 3"
+          },
+          {
+            "id": "D",
+            "text": "Option 4"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T07:08:24.112Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "vdyrzz09ut",
+    "title": "samp2",
+    "description": "samp2",
+    "questions": [
+      {
+        "id": "jxsbgg633ct",
+        "text": "Parsing Failed: Could not detect questions. Please ensure your PDF uses a standard format (e.g., \"1. Question text\", \"A. Option\", \"Answer: A\").",
+        "options": [
+          {
+            "id": "A",
+            "text": "Format your PDF correctly"
+          },
+          {
+            "id": "B",
+            "text": "Use standard numbering"
+          },
+          {
+            "id": "C",
+            "text": "Check for \"Answer:\" lines"
+          },
+          {
+            "id": "D",
+            "text": "Try converting to text file"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T07:20:26.484Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "cz7d6ocavzb",
+    "title": "samp 3",
+    "description": "samp 3",
+    "questions": [
+      {
+        "id": "cfksxrogimk",
+        "text": "Parsing Failed: Could not detect questions. Please ensure your PDF uses a standard format (e.g., \"1. Question text\", \"A. Option\", \"Answer: A\").",
+        "options": [
+          {
+            "id": "A",
+            "text": "Format your PDF correctly"
+          },
+          {
+            "id": "B",
+            "text": "Use standard numbering"
+          },
+          {
+            "id": "C",
+            "text": "Check for \"Answer:\" lines"
+          },
+          {
+            "id": "D",
+            "text": "Try converting to text file"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T08:47:15.544Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "7oov452a4sh",
+    "title": "samp 4 ",
+    "description": "csv",
+    "questions": [
+      {
+        "id": "7ld7drvjgcr",
+        "text": "Parsing Failed. Here is what we read from your file (first 500 chars). Please check if the format matches our expectations:\n\n\n\nQuestionOption AOption BOption COption DCorrect Answer\nWhich tool is commonly used for CI/CD?JenkinsGitAnsibleDockerA\nWhich of the following is a configuration management tool?TerraformKubernetesAnsibleDockerC\nWhich tool is used to create infrastructure as code (IaC)?GitHubTerrraformPrometheusGrafanaB\nDocker is mainly used for?Configuration managementMonitoringContainerizationNetworkingC\nKubernetes is used for?Source controlContainer orchestrationMonitoringCICDB\nWhich command builds a Docker i",
+        "options": [
+          {
+            "id": "A",
+            "text": "Format your PDF correctly"
+          },
+          {
+            "id": "B",
+            "text": "Use standard numbering"
+          },
+          {
+            "id": "C",
+            "text": "Check for \"Answer:\" lines"
+          },
+          {
+            "id": "D",
+            "text": "Try converting to text file"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T08:51:12.462Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "bh2y2merbei",
+    "title": "samp 5",
+    "description": "samp 5",
+    "questions": [
+      {
+        "id": "lo2fpcu4vie",
+        "text": "Parsing Failed. Here is what we read from your file (first 500 chars). Please check if the format matches our expectations:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "options": [
+          {
+            "id": "A",
+            "text": "Format your PDF correctly"
+          },
+          {
+            "id": "B",
+            "text": "Use standard numbering"
+          },
+          {
+            "id": "C",
+            "text": "Check for \"Answer:\" lines"
+          },
+          {
+            "id": "D",
+            "text": "Try converting to text file"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T08:56:36.576Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "73nzxifkdn6",
+    "title": "samp 10",
+    "description": "samp 10",
+    "questions": [
+      {
+        "id": "d0giy8ujgea",
+        "text": "Parsing Failed: No text could be read from the PDF. This usually happens with scanned PDFs or images. Please use a text-based PDF (selectable text) or convert your file to .txt.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Use a text-based PDF"
+          },
+          {
+            "id": "B",
+            "text": "Convert to .txt file"
+          },
+          {
+            "id": "C",
+            "text": "Type questions manually"
+          },
+          {
+            "id": "D",
+            "text": "Use OCR software first"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T09:20:32.003Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "du2qhsnrh1v",
+    "title": "samp 11",
+    "description": "samp 11",
+    "questions": [
+      {
+        "id": "ioos5l35jng",
+        "text": "Parsing Failed: No text could be read from the PDF. This usually happens with scanned PDFs or images. Please use a text-based PDF (selectable text) or convert your file to .txt.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Use a text-based PDF"
+          },
+          {
+            "id": "B",
+            "text": "Convert to .txt file"
+          },
+          {
+            "id": "C",
+            "text": "Type questions manually"
+          },
+          {
+            "id": "D",
+            "text": "Use OCR software first"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T09:29:53.443Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "6foe0w30d5g",
+    "title": "samp 13",
+    "description": "samp 13",
+    "questions": [
+      {
+        "id": "jyzh7mftk9",
+        "text": "Parsing Failed: No text could be read from the PDF. This usually happens with scanned PDFs or images. Please use a text-based PDF (selectable text) or convert your file to .txt.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Use a text-based PDF"
+          },
+          {
+            "id": "B",
+            "text": "Convert to .txt file"
+          },
+          {
+            "id": "C",
+            "text": "Type questions manually"
+          },
+          {
+            "id": "D",
+            "text": "Use OCR software first"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-24T10:34:04.891Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "rnk0vtqami9",
+    "title": "samp 22",
+    "description": "mcq",
+    "questions": [
+      {
+        "id": "v41dkhahpbf",
+        "text": "What is the largest planet in our solar system?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Earth"
+          },
+          {
+            "id": "B",
+            "text": "Mars"
+          },
+          {
+            "id": "C",
+            "text": "Jupiter"
+          },
+          {
+            "id": "D",
+            "text": "Venus"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "btig6lvyenm",
+        "text": "Which element has the chemical symbol O?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Gold"
+          },
+          {
+            "id": "B",
+            "text": "Oxygen"
+          },
+          {
+            "id": "C",
+            "text": "Osmium"
+          },
+          {
+            "id": "D",
+            "text": "Silver"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "pzoaca5vdk",
+        "text": "Which device is used to input text into a computer?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Monitor"
+          },
+          {
+            "id": "B",
+            "text": "Keyboard"
+          },
+          {
+            "id": "C",
+            "text": "Printer"
+          },
+          {
+            "id": "D",
+            "text": "Speaker"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "98cwyc2pld",
+        "text": "What is the freezing point of water?",
+        "options": [
+          {
+            "id": "A",
+            "text": "0°C"
+          },
+          {
+            "id": "B",
+            "text": "10°C"
+          },
+          {
+            "id": "C",
+            "text": "50°C"
+          },
+          {
+            "id": "D",
+            "text": "100°C"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "lxb2fhfu72g",
+        "text": "Who wrote “Romeo and Juliet”?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Charles Dickens"
+          },
+          {
+            "id": "B",
+            "text": "William Shakespeare"
+          },
+          {
+            "id": "C",
+            "text": "Mark Twain"
+          },
+          {
+            "id": "D",
+            "text": "Leo Tolstoy"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "9cldq78iui",
+        "text": "Which number is a prime number?",
+        "options": [
+          {
+            "id": "A",
+            "text": "4"
+          },
+          {
+            "id": "B",
+            "text": "9"
+          },
+          {
+            "id": "C",
+            "text": "11"
+          },
+          {
+            "id": "D",
+            "text": "21"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "amyopavq3o6",
+        "text": "What does CPU stand for?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Central Power Unit"
+          },
+          {
+            "id": "B",
+            "text": "Central Processing Unit"
+          },
+          {
+            "id": "C",
+            "text": "Control Processing Unit"
+          },
+          {
+            "id": "D",
+            "text": "Central Program Utility"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "gq4vuw7jpmb",
+        "text": "Which gas do plants absorb during photosynthesis?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Oxygen"
+          },
+          {
+            "id": "B",
+            "text": "Nitrogen"
+          },
+          {
+            "id": "C",
+            "text": "Carbon dioxide"
+          },
+          {
+            "id": "D",
+            "text": "Helium"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "x0onpb2j9tn",
+        "text": "Who invented the telephone?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Albert Einstein"
+          },
+          {
+            "id": "B",
+            "text": "Alexander Graham Bell"
+          },
+          {
+            "id": "C",
+            "text": "Nikola Tesla"
+          },
+          {
+            "id": "D",
+            "text": "Isaac Newton"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "7oq08580mvx",
+        "text": "Which country is known as the “Land of the Rising Sun”?",
+        "options": [
+          {
+            "id": "A",
+            "text": "China"
+          },
+          {
+            "id": "B",
+            "text": "Australia"
+          },
+          {
+            "id": "C",
+            "text": "Japan"
+          },
+          {
+            "id": "D",
+            "text": "Thailand"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "61e9d79mspk",
+        "text": "Which ocean is the largest?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Atlantic"
+          },
+          {
+            "id": "B",
+            "text": "Indian"
+          },
+          {
+            "id": "C",
+            "text": "Pacific"
+          },
+          {
+            "id": "D",
+            "text": "Arctic"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "8ueruu7c0a",
+        "text": "What is H2O?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Hydrogen peroxide"
+          },
+          {
+            "id": "B",
+            "text": "Water"
+          },
+          {
+            "id": "C",
+            "text": "Oxygen"
+          },
+          {
+            "id": "D",
+            "text": "Salt"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "0g1zvxf3s1l9",
+        "text": "Which continent is the largest?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Africa"
+          },
+          {
+            "id": "B",
+            "text": "Asia"
+          },
+          {
+            "id": "C",
+            "text": "Europe"
+          },
+          {
+            "id": "D",
+            "text": "South America"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "0xd8tk9yawbh",
+        "text": "Which is the fastest land animal?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Lion"
+          },
+          {
+            "id": "B",
+            "text": "Horse"
+          },
+          {
+            "id": "C",
+            "text": "Cheetah"
+          },
+          {
+            "id": "D",
+            "text": "Tiger"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "lu1i3qfz9u",
+        "text": "How many days are there in a leap year?",
+        "options": [
+          {
+            "id": "A",
+            "text": "365"
+          },
+          {
+            "id": "B",
+            "text": "366"
+          },
+          {
+            "id": "C",
+            "text": "360"
+          },
+          {
+            "id": "D",
+            "text": "370"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "s8xgjh82ey",
+        "text": "Which organ pumps blood in the human body?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Lungs"
+          },
+          {
+            "id": "B",
+            "text": "Brain"
+          },
+          {
+            "id": "C",
+            "text": "Heart"
+          },
+          {
+            "id": "D",
+            "text": "Liver"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "wdy6n662dhd",
+        "text": "What is the boiling point of water?",
+        "options": [
+          {
+            "id": "A",
+            "text": "50°C"
+          },
+          {
+            "id": "B",
+            "text": "100°C"
+          },
+          {
+            "id": "C",
+            "text": "200°C"
+          },
+          {
+            "id": "D",
+            "text": "150°C"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "l374hjv14h",
+        "text": "Which metal is liquid at room temperature?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Gold"
+          },
+          {
+            "id": "B",
+            "text": "Mercury"
+          },
+          {
+            "id": "C",
+            "text": "Iron"
+          },
+          {
+            "id": "D",
+            "text": "Copper"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "v7stfdolazo",
+        "text": "Which programming language is used to style web pages?",
+        "options": [
+          {
+            "id": "A",
+            "text": "HTML"
+          },
+          {
+            "id": "B",
+            "text": "CSS"
+          },
+          {
+            "id": "C",
+            "text": "Python"
+          },
+          {
+            "id": "D",
+            "text": "Java"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "chhm8sv2jco",
+        "text": "Who painted the Mona Lisa?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Michelangelo"
+          },
+          {
+            "id": "B",
+            "text": "Raphael"
+          },
+          {
+            "id": "C",
+            "text": "Leonardo da Vinci"
+          },
+          {
+            "id": "D",
+            "text": "Picasso"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-26T11:01:02.715Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "ttveda9qo4e",
+    "title": "sam 23",
+    "description": "ai",
+    "questions": [
+      {
+        "id": "15tz3zfsnz1",
+        "text": "Which algorithm is used for classification?",
+        "options": [
+          {
+            "id": "A",
+            "text": "K-Means"
+          },
+          {
+            "id": "B",
+            "text": "Linear Regression"
+          },
+          {
+            "id": "C",
+            "text": "Logistic Regression"
+          },
+          {
+            "id": "D",
+            "text": "PCA"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "po9kbc7itne",
+        "text": "Which of the following is an unsupervised learning algorithm?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Decision Tree"
+          },
+          {
+            "id": "B",
+            "text": "Random Forest"
+          },
+          {
+            "id": "C",
+            "text": "K-Means"
+          },
+          {
+            "id": "D",
+            "text": "Naive Bayes"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "psp0pgqwuzg",
+        "text": "What does ANN stand for?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Artificial Natural Network"
+          },
+          {
+            "id": "B",
+            "text": "Automated Neural Network"
+          },
+          {
+            "id": "C",
+            "text": "Artificial Neural Network"
+          },
+          {
+            "id": "D",
+            "text": "Advanced Neural Node"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "rcjdhadfs8n",
+        "text": "Which activation function is commonly used in neural networks?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Softmax"
+          },
+          {
+            "id": "B",
+            "text": "ReLU"
+          },
+          {
+            "id": "C",
+            "text": "Sigmoid"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "D"
+      },
+      {
+        "id": "d9u9i9bqlor",
+        "text": "Which algorithm is used for dimensionality reduction?",
+        "options": [
+          {
+            "id": "A",
+            "text": "SVM"
+          },
+          {
+            "id": "B",
+            "text": "PCA"
+          },
+          {
+            "id": "C",
+            "text": "KNN"
+          },
+          {
+            "id": "D",
+            "text": "Naive Bayes"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "6b1hlzq3654",
+        "text": "Overfitting occurs when a model:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Fits the data poorly"
+          },
+          {
+            "id": "B",
+            "text": "Fits the training data too well"
+          },
+          {
+            "id": "C",
+            "text": "Fits both data perfectly"
+          },
+          {
+            "id": "D",
+            "text": "Cannot find patterns"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "kptgyl60mpi",
+        "text": "Which metric is used for classification accuracy?",
+        "options": [
+          {
+            "id": "A",
+            "text": "MSE"
+          },
+          {
+            "id": "B",
+            "text": "RMSE"
+          },
+          {
+            "id": "C",
+            "text": "Accuracy Score"
+          },
+          {
+            "id": "D",
+            "text": "R² Score"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "9k9umpuvuwk",
+        "text": "Which algorithm is used for recommendation systems?",
+        "options": [
+          {
+            "id": "A",
+            "text": "KNN"
+          },
+          {
+            "id": "B",
+            "text": "Collaborative Filtering"
+          },
+          {
+            "id": "C",
+            "text": "Linear Regression"
+          },
+          {
+            "id": "D",
+            "text": "Logistic Regression"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "28a94geeuw8",
+        "text": "The process of converting raw data into understandable format is called:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Data Mining"
+          },
+          {
+            "id": "B",
+            "text": "Data Cleaning"
+          },
+          {
+            "id": "C",
+            "text": "Data Transformation"
+          },
+          {
+            "id": "D",
+            "text": "Data Labeling"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "kkz7a0nxma",
+        "text": "Which ML type requires labeled data?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Supervised"
+          },
+          {
+            "id": "B",
+            "text": "Unsupervised"
+          },
+          {
+            "id": "C",
+            "text": "Reinforcement"
+          },
+          {
+            "id": "D",
+            "text": "Clustering"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "bwv0mwq1r2",
+        "text": "Gradient Descent is used to:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Increase error"
+          },
+          {
+            "id": "B",
+            "text": "Minimize loss"
+          },
+          {
+            "id": "C",
+            "text": "Increase accuracy"
+          },
+          {
+            "id": "D",
+            "text": "Reduce dataset"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "ynwhbyfmtj",
+        "text": "What is the output of a binary classification model?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Any number"
+          },
+          {
+            "id": "B",
+            "text": "0 or 1"
+          },
+          {
+            "id": "C",
+            "text": "Multiple categories"
+          },
+          {
+            "id": "D",
+            "text": "Text"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "bpt0ydno9od",
+        "text": "Which is a reinforcement learning concept?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Agent"
+          },
+          {
+            "id": "B",
+            "text": "Environment"
+          },
+          {
+            "id": "C",
+            "text": "Reward"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "D"
+      },
+      {
+        "id": "ko0zeqpgpsn",
+        "text": "Which library is widely used for deep learning?",
+        "options": [
+          {
+            "id": "A",
+            "text": "NumPy"
+          },
+          {
+            "id": "B",
+            "text": "TensorFlow"
+          },
+          {
+            "id": "C",
+            "text": "Pandas"
+          },
+          {
+            "id": "D",
+            "text": "Matplotlib"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "f46yzvve56",
+        "text": "NLP stands for:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Natural Language Processing"
+          },
+          {
+            "id": "B",
+            "text": "Neural Learning Process"
+          },
+          {
+            "id": "C",
+            "text": "Next Level Prediction"
+          },
+          {
+            "id": "D",
+            "text": "None"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "l9eb388asmr",
+        "text": "Which model is used in NLP?",
+        "options": [
+          {
+            "id": "A",
+            "text": "RNN"
+          },
+          {
+            "id": "B",
+            "text": "CNN"
+          },
+          {
+            "id": "C",
+            "text": "KNN"
+          },
+          {
+            "id": "D",
+            "text": "SVM"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "cps8hi1iho4",
+        "text": "A confusion matrix is used in:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Regression"
+          },
+          {
+            "id": "B",
+            "text": "Classification"
+          },
+          {
+            "id": "C",
+            "text": "Clustering"
+          },
+          {
+            "id": "D",
+            "text": "Dimensionality reduction"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "lqrz2qj1xt",
+        "text": "Which term refers to training too long causing poor generalization?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Underfitting"
+          },
+          {
+            "id": "B",
+            "text": "Overfitting"
+          },
+          {
+            "id": "C",
+            "text": "Data Drift"
+          },
+          {
+            "id": "D",
+            "text": "Feature Scaling"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "he72obgx3qj",
+        "text": "What technique is used to avoid overfitting?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Dropout"
+          },
+          {
+            "id": "B",
+            "text": "More layers"
+          },
+          {
+            "id": "C",
+            "text": "More epochs"
+          },
+          {
+            "id": "D",
+            "text": "No activation"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "w06vlbvdsrs",
+        "text": "Which algorithm is best for continuous value prediction?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Logistic Regression"
+          },
+          {
+            "id": "B",
+            "text": "Decision Tree Classifier"
+          },
+          {
+            "id": "C",
+            "text": "Linear Regression"
+          },
+          {
+            "id": "D",
+            "text": "Naive Bayes"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-26T11:04:52.297Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5",
+      "5db5q2t27yi"
+    ]
+  },
+  {
+    "id": "zgnmxe2shq",
+    "title": "samp 24",
+    "description": "samp",
+    "questions": [
+      {
+        "id": "srcniy5teyq",
+        "text": "Which algorithm is used for classification?",
+        "options": [
+          {
+            "id": "A",
+            "text": "K-Means"
+          },
+          {
+            "id": "B",
+            "text": "Linear Regression"
+          },
+          {
+            "id": "C",
+            "text": "Logistic Regression"
+          },
+          {
+            "id": "D",
+            "text": "PCA"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "ko2ilhch0no",
+        "text": "Which of the following is an unsupervised learning algorithm?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Decision Tree"
+          },
+          {
+            "id": "B",
+            "text": "Random Forest"
+          },
+          {
+            "id": "C",
+            "text": "K-Means"
+          },
+          {
+            "id": "D",
+            "text": "Naive Bayes"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "9rhy0lbv85t",
+        "text": "What does ANN stand for?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Artificial Natural Network"
+          },
+          {
+            "id": "B",
+            "text": "Automated Neural Network"
+          },
+          {
+            "id": "C",
+            "text": "Artificial Neural Network"
+          },
+          {
+            "id": "D",
+            "text": "Advanced Neural Node"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "b01vkausnyj",
+        "text": "Which activation function is commonly used in neural networks?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Softmax"
+          },
+          {
+            "id": "B",
+            "text": "ReLU"
+          },
+          {
+            "id": "C",
+            "text": "Sigmoid"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "D"
+      },
+      {
+        "id": "15wdhxg752m",
+        "text": "Which algorithm is used for dimensionality reduction?",
+        "options": [
+          {
+            "id": "A",
+            "text": "SVM"
+          },
+          {
+            "id": "B",
+            "text": "PCA"
+          },
+          {
+            "id": "C",
+            "text": "KNN"
+          },
+          {
+            "id": "D",
+            "text": "Naive Bayes"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "uhyrg92rph",
+        "text": "Overfitting occurs when a model:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Fits the data poorly"
+          },
+          {
+            "id": "B",
+            "text": "Fits the training data too well"
+          },
+          {
+            "id": "C",
+            "text": "Fits both data perfectly"
+          },
+          {
+            "id": "D",
+            "text": "Cannot find patterns"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "ozdc40074c",
+        "text": "Which metric is used for classification accuracy?",
+        "options": [
+          {
+            "id": "A",
+            "text": "MSE"
+          },
+          {
+            "id": "B",
+            "text": "RMSE"
+          },
+          {
+            "id": "C",
+            "text": "Accuracy Score"
+          },
+          {
+            "id": "D",
+            "text": "R² Score"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "a36dpbc1blk",
+        "text": "Which algorithm is used for recommendation systems?",
+        "options": [
+          {
+            "id": "A",
+            "text": "KNN"
+          },
+          {
+            "id": "B",
+            "text": "Collaborative Filtering"
+          },
+          {
+            "id": "C",
+            "text": "Linear Regression"
+          },
+          {
+            "id": "D",
+            "text": "Logistic Regression"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "jn1ot45qigs",
+        "text": "The process of converting raw data into understandable format is called:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Data Mining"
+          },
+          {
+            "id": "B",
+            "text": "Data Cleaning"
+          },
+          {
+            "id": "C",
+            "text": "Data Transformation"
+          },
+          {
+            "id": "D",
+            "text": "Data Labeling"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      },
+      {
+        "id": "epb2tz8pcz",
+        "text": "Which ML type requires labeled data?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Supervised"
+          },
+          {
+            "id": "B",
+            "text": "Unsupervised"
+          },
+          {
+            "id": "C",
+            "text": "Reinforcement"
+          },
+          {
+            "id": "D",
+            "text": "Clustering"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "d48bf78rypj",
+        "text": "Gradient Descent is used to:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Increase error"
+          },
+          {
+            "id": "B",
+            "text": "Minimize loss"
+          },
+          {
+            "id": "C",
+            "text": "Increase accuracy"
+          },
+          {
+            "id": "D",
+            "text": "Reduce dataset"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "ba9bx4nqoqk",
+        "text": "What is the output of a binary classification model?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Any number"
+          },
+          {
+            "id": "B",
+            "text": "0 or 1"
+          },
+          {
+            "id": "C",
+            "text": "Multiple categories"
+          },
+          {
+            "id": "D",
+            "text": "Text"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "208mspkwibw",
+        "text": "Which is a reinforcement learning concept?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Agent"
+          },
+          {
+            "id": "B",
+            "text": "Environment"
+          },
+          {
+            "id": "C",
+            "text": "Reward"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "D"
+      },
+      {
+        "id": "0qsmfs5ev7w",
+        "text": "Which library is widely used for deep learning?",
+        "options": [
+          {
+            "id": "A",
+            "text": "NumPy"
+          },
+          {
+            "id": "B",
+            "text": "TensorFlow"
+          },
+          {
+            "id": "C",
+            "text": "Pandas"
+          },
+          {
+            "id": "D",
+            "text": "Matplotlib"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "w04nhcbrfj",
+        "text": "NLP stands for:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Natural Language Processing"
+          },
+          {
+            "id": "B",
+            "text": "Neural Learning Process"
+          },
+          {
+            "id": "C",
+            "text": "Next Level Prediction"
+          },
+          {
+            "id": "D",
+            "text": "None"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "4i1htdlzos3",
+        "text": "Which model is used in NLP?",
+        "options": [
+          {
+            "id": "A",
+            "text": "RNN"
+          },
+          {
+            "id": "B",
+            "text": "CNN"
+          },
+          {
+            "id": "C",
+            "text": "KNN"
+          },
+          {
+            "id": "D",
+            "text": "SVM"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "rie1vqvpak",
+        "text": "A confusion matrix is used in:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Regression"
+          },
+          {
+            "id": "B",
+            "text": "Classification"
+          },
+          {
+            "id": "C",
+            "text": "Clustering"
+          },
+          {
+            "id": "D",
+            "text": "Dimensionality reduction"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "89bdrjksiq4",
+        "text": "Which term refers to training too long causing poor generalization?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Underfitting"
+          },
+          {
+            "id": "B",
+            "text": "Overfitting"
+          },
+          {
+            "id": "C",
+            "text": "Data Drift"
+          },
+          {
+            "id": "D",
+            "text": "Feature Scaling"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "B"
+      },
+      {
+        "id": "36tk8341pq7",
+        "text": "What technique is used to avoid overfitting?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Dropout"
+          },
+          {
+            "id": "B",
+            "text": "More layers"
+          },
+          {
+            "id": "C",
+            "text": "More epochs"
+          },
+          {
+            "id": "D",
+            "text": "No activation"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "A"
+      },
+      {
+        "id": "wu3iuz33yzm",
+        "text": "Which algorithm is best for continuous value prediction?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Logistic Regression"
+          },
+          {
+            "id": "B",
+            "text": "Decision Tree Classifier"
+          },
+          {
+            "id": "C",
+            "text": "Linear Regression"
+          },
+          {
+            "id": "D",
+            "text": "Naive Bayes"
+          }
+        ],
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "correct_option_id": "C"
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-26T11:32:09.007Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5",
+      "5db5q2t27yi"
+    ]
+  },
+  {
+    "id": "d3be2loiul",
+    "title": "samp 25",
+    "description": "",
+    "questions": [
+      {
+        "id": "xl7ulbpl2h8",
+        "text": "Parsing Failed: No text could be read from the PDF. This usually happens with scanned PDFs or images. Please use a text-based PDF (selectable text) or convert your file to .txt.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Use a text-based PDF"
+          },
+          {
+            "id": "B",
+            "text": "Convert to .txt file"
+          },
+          {
+            "id": "C",
+            "text": "Type questions manually"
+          },
+          {
+            "id": "D",
+            "text": "Use OCR software first"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "created_at": "2025-11-26T11:41:24.896Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5",
+      "5db5q2t27yi"
+    ]
+  },
+  {
+    "id": "p83g609vpn",
+    "title": "LINUX",
+    "description": "basic of linux",
+    "questions": [
+      {
+        "id": "kpj1c8n5wk",
+        "text": "Q1: What is the primary purpose of for linux?",
+        "options": [
+          {
+            "id": "A",
+            "text": "To improve performance"
+          },
+          {
+            "id": "B",
+            "text": "To increase complexity"
+          },
+          {
+            "id": "C",
+            "text": "To reduce security"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "correct_option_id": "A",
+        "explanation": "for linux is mainly used to optimize and improve system performance.",
+        "meta": {
+          "difficulty": "hard"
+        },
+        "time_limit_seconds": 30
+      },
+      {
+        "id": "w11xayvasbl",
+        "text": "Q2: Which of the following is a key feature of for linux?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Manual memory management"
+          },
+          {
+            "id": "B",
+            "text": "Scalability and flexibility"
+          },
+          {
+            "id": "C",
+            "text": "Single-threaded execution only"
+          },
+          {
+            "id": "D",
+            "text": "Requires expensive hardware"
+          }
+        ],
+        "correct_option_id": "B",
+        "explanation": "Scalability is one of the defining features of for linux.",
+        "meta": {
+          "difficulty": "easy"
+        },
+        "time_limit_seconds": 30
+      },
+      {
+        "id": "p8q1giy85kl",
+        "text": "Q3: When should you use for linux in a project?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Never, it is deprecated"
+          },
+          {
+            "id": "B",
+            "text": "Only for small scripts"
+          },
+          {
+            "id": "C",
+            "text": "When you need robust data handling"
+          },
+          {
+            "id": "D",
+            "text": "For styling only"
+          }
+        ],
+        "correct_option_id": "C",
+        "explanation": "for linux is ideal for scenarios requiring strong data management capabilities.",
+        "meta": {
+          "difficulty": "medium"
+        },
+        "time_limit_seconds": 30
+      }
+    ],
+    "created_by": "rdmmshannnq",
+    "created_at": "2025-11-26T13:00:12.006Z",
+    "scheduled_for": "2025-11-26T18:29",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5",
+      "5db5q2t27yi",
+      "dbdupu8j5p8"
+    ],
+    "retake_permissions": []
+  },
+  {
+    "id": "47vjhpaeoh3",
+    "title": "linux 2",
+    "description": "",
+    "questions": [
+      {
+        "id": "0ux23vcsym5",
+        "text": "Parsing Failed. Here is what we read from your file (first 500 chars). Please check if the format matches our expectations:\n\n\n\n1) Which command is used to display the current working directory?  \n  a) pwd b) ls c) dir d) cd \n• Correct Option: a \n2)  Which command is used to list the files in a directory?  \na) show b) ls c) cat d) list \n• Correct Option: b \n3)  Which option with the ls command is used to display hidden files? \n a) -h b) -a c) -l d) -d \n• Correct Option: b \n4) How do you change a file's permissions to give the owner read, write, and execute permissions, \nand all others only read permissions?  \na) chmod ",
+        "options": [
+          {
+            "id": "A",
+            "text": "Format your PDF correctly"
+          },
+          {
+            "id": "B",
+            "text": "Use standard numbering"
+          },
+          {
+            "id": "C",
+            "text": "Check for \"Answer:\" lines"
+          },
+          {
+            "id": "D",
+            "text": "Try converting to text file"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "time_limit_seconds": 30
+      }
+    ],
+    "created_by": "rdmmshannnq",
+    "created_at": "2025-11-26T13:24:40.978Z",
+    "scheduled_for": "2025-11-26T18:54",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "dbdupu8j5p8",
+      "g8xtubw73n5",
+      "5db5q2t27yi"
+    ],
+    "retake_permissions": [
+      "dbdupu8j5p8"
+    ]
+  },
+  {
+    "id": "4w83hscdqgh",
+    "title": "Linux",
+    "description": "",
+    "questions": [
+      {
+        "id": "cuwwur05pk9",
+        "text": "Parsing Failed: No text could be read from the PDF. This usually happens with scanned PDFs or images. Please use a text-based PDF (selectable text) or convert your file to .txt.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Use a text-based PDF"
+          },
+          {
+            "id": "B",
+            "text": "Convert to .txt file"
+          },
+          {
+            "id": "C",
+            "text": "Type questions manually"
+          },
+          {
+            "id": "D",
+            "text": "Use OCR software first"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        },
+        "time_limit_seconds": 30
+      }
+    ],
+    "created_by": "rdmmshannnq",
+    "created_at": "2025-11-26T14:19:36.627Z",
+    "scheduled_for": "2025-11-26T19:48",
+    "duration_minutes": 95,
+    "assigned_to": [
+      "dbdupu8j5p8",
+      "g8xtubw73n5"
+    ]
+  },
+  {
+    "id": "5vuy3gc9j8o",
+    "title": "sample Linux",
+    "description": "",
+    "questions": [
+      {
+        "id": "43btfuefxz8",
+        "text": "Parsing Failed: No text could be read from the PDF. This usually happens with scanned PDFs or images. Please ensure your file contains properly formatted questions and answers.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Use a text-based PDF with selectable text"
+          },
+          {
+            "id": "B",
+            "text": "Convert scanned PDF to text format first"
+          },
+          {
+            "id": "C",
+            "text": "Check that questions follow standard format"
+          },
+          {
+            "id": "D",
+            "text": "Try re-scanning document at higher resolution"
+          }
+        ],
+        "correct_option_id": "A",
+        "meta": {
+          "source_file": "uploaded_file",
+          "difficulty": "medium"
+        }
+      }
+    ],
+    "created_by": "rdmmshannnq",
+    "created_at": "2025-11-26T14:50:05.139Z",
+    "duration_minutes": 30,
+    "assigned_to": [
+      "g8xtubw73n5",
+      "dbdupu8j5p8",
+      "5db5q2t27yi"
+    ]
+  }
+]

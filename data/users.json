@@ -1,0 +1,47 @@
+[
+  {
+    "id": "g8xtubw73n5",
+    "name": "jagadeesh",
+    "email": "jagadeeshdec24@gmail.com",
+    "password": "6381813711",
+    "role": "candidate",
+    "created_at": "2025-11-21T17:54:47.153Z",
+    "assigned_assessments": []
+  },
+  {
+    "id": "e2bd3bdd-9e24-4011-9677-37d9e3b6f1d3",
+    "name": "Admin",
+    "email": "admin@assessmentai.com",
+    "password": "admin123",
+    "role": "examiner",
+    "created_at": "2025-11-21T17:57:25.590Z",
+    "created_assessments": []
+  },
+  {
+    "id": "rdmmshannnq",
+    "name": "gokul",
+    "email": "gokul@gmail.com",
+    "password": "guhatek",
+    "role": "examiner",
+    "created_at": "2025-11-22T06:09:49.762Z",
+    "created_assessments": []
+  },
+  {
+    "id": "5db5q2t27yi",
+    "name": "ashwin",
+    "email": "ashwin@gmail.com",
+    "password": "ashash",
+    "role": "candidate",
+    "created_at": "2025-11-26T11:02:57.454Z",
+    "assigned_assessments": []
+  },
+  {
+    "id": "dbdupu8j5p8",
+    "name": "ashwinm",
+    "email": "ashlog559@gmail.com",
+    "password": "Ashwinm@15",
+    "role": "candidate",
+    "created_at": "2025-11-26T12:54:01.731Z",
+    "assigned_assessments": []
+  }
+]
