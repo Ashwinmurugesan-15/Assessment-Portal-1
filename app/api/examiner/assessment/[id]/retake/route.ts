@@ -17,22 +17,25 @@ export async function POST(
             );
         }
 
-        const assessment = db.getAssessment(id);
+        const assessment = await await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
-        // Verify examiner owns this assessment
-        if (assessment.created_by !== examiner_id) {
+        // Get the examiner/admin user to check their role
+        const examiner = await await db.getUserById(examiner_id);
+
+        // Verify examiner owns this assessment OR is an admin
+        if (assessment.created_by !== examiner_id && examiner?.role !== 'admin') {
             return NextResponse.json(
-                { error: 'Only the assessment creator can grant retake permissions' },
+                { error: 'Only the assessment creator or an admin can grant retake permissions' },
                 { status: 403 }
             );
         }
 
         // Check if candidate has attempted the assessment
-        const attemptCount = db.getUserAttemptCount(id, candidate_id);
+        const attemptCount = await await db.getUserAttemptCount(id, candidate_id);
         if (attemptCount === 0) {
             return NextResponse.json(
                 { error: 'Candidate has not attempted this assessment yet' },
@@ -50,7 +53,7 @@ export async function POST(
         }
 
         const updatedPermissions = [...currentPermissions, candidate_id];
-        db.updateAssessment(id, { retake_permissions: updatedPermissions });
+        await db.updateAssessment(id, { retake_permissions: updatedPermissions });
 
         return NextResponse.json({
             message: 'Retake permission granted successfully',
@@ -83,16 +86,19 @@ export async function DELETE(
             );
         }
 
-        const assessment = db.getAssessment(id);
+        const assessment = await await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
-        // Verify examiner owns this assessment
-        if (assessment.created_by !== examiner_id) {
+        // Get the examiner/admin user to check their role
+        const examiner = await await db.getUserById(examiner_id);
+
+        // Verify examiner owns this assessment OR is an admin
+        if (assessment.created_by !== examiner_id && examiner?.role !== 'admin') {
             return NextResponse.json(
-                { error: 'Only the assessment creator can revoke retake permissions' },
+                { error: 'Only the assessment creator or an admin can revoke retake permissions' },
                 { status: 403 }
             );
         }
@@ -100,7 +106,7 @@ export async function DELETE(
         const currentPermissions = assessment.retake_permissions || [];
         const updatedPermissions = currentPermissions.filter((uid: string) => uid !== candidate_id);
 
-        db.updateAssessment(id, { retake_permissions: updatedPermissions });
+        await db.updateAssessment(id, { retake_permissions: updatedPermissions });
 
         return NextResponse.json({
             message: 'Retake permission revoked successfully',

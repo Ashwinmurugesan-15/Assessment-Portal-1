@@ -10,9 +10,11 @@ export async function POST(req: NextRequest) {
         const description = formData.get('description') as string || '';
         const createdBy = formData.get('createdBy') as string || '';
         const assignedToStr = formData.get('assignedTo') as string || '[]';
-        const scheduledFor = formData.get('scheduledFor') as string || '';
+        const scheduledFrom = formData.get('scheduledFrom') as string || '';
+        const scheduledTo = formData.get('scheduledTo') as string || '';
         const durationMinutes = parseInt(formData.get('durationMinutes') as string || '30');
         const timePerQuestion = parseInt(formData.get('timePerQuestion') as string || '0');
+        const difficulty = formData.get('difficulty') as string || 'medium';
         const prompt = formData.get('prompt') as string || '';
         const file = formData.get('file') as File | null;
 
@@ -47,9 +49,15 @@ export async function POST(req: NextRequest) {
             );
         }
 
+        // Shuffle and limit to 150 questions as per requirement
+        let finalQuestions = [...questions].sort(() => Math.random() - 0.5);
+        if (finalQuestions.length > 150) {
+            finalQuestions = finalQuestions.slice(0, 150);
+        }
+
         // Apply time limit to all questions if specified
         if (timePerQuestion > 0) {
-            questions.forEach(q => {
+            finalQuestions.forEach(q => {
                 q.time_limit_seconds = timePerQuestion;
             });
         }
@@ -65,21 +73,23 @@ export async function POST(req: NextRequest) {
         }
 
         // Save assessment with all metadata
-        db.saveAssessment({
-            id: assessmentId,
+        await db.saveAssessment({
+            assessment_id: assessmentId,
             title,
             description,
-            questions,
+            difficulty,
+            questions: finalQuestions,
             created_by: createdBy,
             created_at: new Date().toISOString(),
-            scheduled_for: scheduledFor || undefined,
+            scheduled_from: scheduledFrom || undefined,
+            scheduled_to: scheduledTo || undefined,
             duration_minutes: durationMinutes,
             assigned_to: assignedTo
         });
 
         return NextResponse.json({
             assessment_id: assessmentId,
-            question_count: questions.length
+            question_count: finalQuestions.length
         });
 
     } catch (error) {

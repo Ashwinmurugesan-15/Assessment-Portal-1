@@ -4,8 +4,9 @@ export interface User {
     name: string;
     email: string;
     password: string; // In production, this should be hashed
-    role: 'candidate' | 'examiner';
+    role: 'candidate' | 'examiner' | 'admin';
     created_at: string;
+    is_first_login?: boolean;
 }
 
 export interface Candidate extends User {
@@ -16,6 +17,10 @@ export interface Candidate extends User {
 export interface Examiner extends User {
     role: 'examiner';
     created_assessments: string[]; // Assessment IDs they created
+}
+
+export interface Admin extends User {
+    role: 'admin';
 }
 
 // Existing types...
@@ -45,6 +50,7 @@ export interface Assessment {
     assessment_id: string;
     title: string;
     description?: string;
+    difficulty?: string;
     questions: QuestionWithAnswer[];
     created_by: string; // Examiner ID
     created_at: string;
@@ -74,6 +80,8 @@ export interface GradingRequest {
     answers: AnswerSubmission[];
     time_started: string;
     time_submitted: string;
+    tab_switch_count?: number;
+    termination_reason?: string;
 }
 
 export interface DetailedResult {
@@ -101,6 +109,8 @@ export interface GradingResult {
     detailed: DetailedResult[];
     analytics: Analytics;
     graded_at: string;
+    tab_switch_count?: number;
+    termination_reason?: string;
 }
 
 export interface ScoreDistribution {

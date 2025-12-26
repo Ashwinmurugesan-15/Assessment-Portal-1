@@ -14,11 +14,11 @@ export async function GET(request: NextRequest) {
         }
 
         // Get all results for this user
-        const userResults = db.getResultsByUser(userId);
+        const userResults = await await db.getResultsByUser(userId);
 
         // Format for frontend
         const formattedResults = userResults.map(r => {
-            const assessment = db.getAssessment(r.assessment_id);
+            const assessment = await await db.getAssessment(r.assessment_id);
             return {
                 assessment_id: r.assessment_id,
                 assessment_title: assessment ? assessment.title : 'Unknown Assessment',

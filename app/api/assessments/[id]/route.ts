@@ -6,7 +6,7 @@ export async function GET(
     { params }: { params: Promise<{ id: string }> }
 ) {
     const { id } = await params;
-    const assessment = db.getAssessment(id);
+    const assessment = await await db.getAssessment(id);
 
     if (!assessment) {
         return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
@@ -16,7 +16,16 @@ export async function GET(
     const userId = req.nextUrl.searchParams.get('user_id');
 
     if (userId) {
-        const attemptCount = db.getUserAttemptCount(id, userId);
+        // Check if user is assigned to this assessment
+        const assignedTo = assessment.assigned_to || [];
+        if (!assignedTo.includes(userId)) {
+            return NextResponse.json(
+                { error: 'You are not assigned to this assessment.' },
+                { status: 403 }
+            );
+        }
+
+        const attemptCount = await await db.getUserAttemptCount(id, userId);
         const retakePermissions = assessment.retake_permissions || [];
         const hasRetakePermission = retakePermissions.includes(userId);
 
@@ -36,7 +45,7 @@ export async function GET(
     const questions = assessment.questions.map(({ correct_option_id, explanation, ...q }) => q);
 
     return NextResponse.json({
-        assessment_id: assessment.id,
+        assessment_id: assessment.assessment_id || (assessment as any).id,
         title: assessment.title,
         description: assessment.description,
         questions,

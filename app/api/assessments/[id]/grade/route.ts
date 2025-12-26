@@ -9,14 +9,14 @@ export async function POST(
     try {
         const { id } = await params;
         const body: GradingRequest = await req.json();
-        const assessment = db.getAssessment(id);
+        const assessment = await await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
         // Check if user has already attempted this assessment
-        const attemptCount = db.getUserAttemptCount(id, body.user_id);
+        const attemptCount = await await db.getUserAttemptCount(id, body.user_id);
         const retakePermissions = assessment.retake_permissions || [];
         const hasRetakePermission = retakePermissions.includes(body.user_id);
 
@@ -33,7 +33,7 @@ export async function POST(
         // If user has retake permission and is using it, remove them from retake_permissions
         if (attemptCount > 0 && hasRetakePermission) {
             const updatedPermissions = retakePermissions.filter((uid: string) => uid !== body.user_id);
-            db.updateAssessment(id, { retake_permissions: updatedPermissions });
+            await db.updateAssessment(id, { retake_permissions: updatedPermissions });
         }
 
 
@@ -57,7 +57,7 @@ export async function POST(
             });
         });
 
-        const totalQuestions = assessment.questions.length;
+        const totalQuestions = Math.min(100, assessment.questions.length);
         const score = (correctCount / totalQuestions) * 100;
 
         // Calculate time taken
@@ -78,10 +78,12 @@ export async function POST(
                 accuracy_percent: score,
                 avg_time_per_question_seconds: totalQuestions > 0 ? timeTakenSeconds / totalQuestions : 0
             },
-            graded_at: new Date().toISOString()
+            graded_at: new Date().toISOString(),
+            tab_switch_count: body.tab_switch_count || 0,
+            termination_reason: body.termination_reason || undefined
         };
 
-        db.saveResult(result);
+        await db.saveResult(result);
 
         return NextResponse.json(result);
 

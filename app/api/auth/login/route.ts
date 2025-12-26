@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
         }
 
         // Find user by email
-        const user = db.getUserByEmail(email);
+        const user = await await db.getUserByEmail(email);
 
         if (!user) {
             return NextResponse.json(
@@ -37,7 +37,8 @@ export async function POST(request: NextRequest) {
 
         return NextResponse.json({
             message: 'Login successful',
-            user: userWithoutPassword
+            user: userWithoutPassword,
+            is_first_login: user.is_first_login
         });
 
     } catch (error) {

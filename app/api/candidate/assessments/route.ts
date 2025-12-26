@@ -11,17 +11,33 @@ export async function GET(request: NextRequest) {
         }
 
         // Fetch assessments assigned to this candidate
-        const assessments = db.getAssessmentsByCandidate(userId);
+        const assessments = await await db.getAssessmentsByCandidate(userId);
+
+        // Fetch user results to check completion status
+        const userResults = await await db.getResultsByUser(userId);
 
         // Prepare data for the frontend
-        const formattedAssessments = assessments.map(a => ({
-            id: a.id,
-            title: a.title,
-            description: a.description,
-            scheduled_for: a.scheduled_for,
-            duration_minutes: a.duration_minutes,
-            status: 'upcoming'
-        }));
+        const formattedAssessments = assessments.map(a => {
+            const assessmentId = a.assessment_id || (a as any).id;
+            const hasResult = userResults.some(r => r.assessment_id === assessmentId);
+            const retakeGranted = a.retake_permissions?.includes(userId);
+
+            // If user has completed it and NO retake is granted, mark as completed
+            // If retake is granted, it stays 'upcoming' (or we could add a 'retake' status)
+            const status = (hasResult && !retakeGranted) ? 'completed' : 'upcoming';
+
+            return {
+                id: assessmentId,
+                title: a.title,
+                description: a.description,
+                difficulty: a.difficulty,
+                scheduled_for: a.scheduled_for,
+                scheduled_from: a.scheduled_from,
+                scheduled_to: a.scheduled_to,
+                duration_minutes: a.duration_minutes,
+                status
+            };
+        });
 
         return NextResponse.json({ assessments: formattedAssessments });
     } catch (error) {

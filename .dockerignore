@@ -1,0 +1,7 @@
+# Add Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Add environment file
+.dockerignore

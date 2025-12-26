@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
         }
 
         // Get assessments created by this examiner
-        const assessments = db.getAssessmentsByExaminer(examinerId);
+        const assessments = await await db.getAssessmentsByExaminer(examinerId);
 
         // Calculate stats
         const totalCandidates = new Set(
@@ -22,9 +22,9 @@ export async function GET(request: NextRequest) {
         ).size;
 
         // Get all results for these assessments
-        const allResults = db.getAllResults();
+        const allResults = await await db.getAllResults();
         const relevantResults = allResults.filter(r =>
-            assessments.some(a => a.id === r.assessment_id)
+            assessments.some(a => (a.assessment_id || (a as any).id) === r.assessment_id)
         );
 
         const avgScore = relevantResults.length > 0
@@ -33,9 +33,10 @@ export async function GET(request: NextRequest) {
 
         // Format for frontend
         const formattedAssessments = assessments.map(a => ({
-            id: a.id,
+            id: a.assessment_id || (a as any).id,
             title: a.title,
             description: a.description,
+            difficulty: a.difficulty,
             created_at: a.created_at,
             assigned_to: a.assigned_to,
             questions_count: a.questions.length

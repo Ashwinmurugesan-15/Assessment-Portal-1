@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Calendar, Clock, Trophy, TrendingUp, LogOut, BookOpen, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 interface User {
     id: string;
@@ -81,8 +82,9 @@ export default function CandidateDashboard() {
     };
 
     useEffect(() => {
-        // Initially show only first 4 upcoming assessments
-        setVisibleUpcomingAssessments(showAllUpcoming ? upcomingAssessments : upcomingAssessments.slice(0, 4));
+        // Filter to show only upcoming assessments (not completed)
+        const upcoming = upcomingAssessments.filter(a => a.status === 'upcoming');
+        setVisibleUpcomingAssessments(showAllUpcoming ? upcoming : upcoming.slice(0, 4));
     }, [upcomingAssessments, showAllUpcoming]);
 
     useEffect(() => {
@@ -118,25 +120,28 @@ export default function CandidateDashboard() {
     }
 
     return (
-        <div className="min-h-screen relative overflow-hidden bg-gray-50">
+        <div className="min-h-screen relative overflow-hidden bg-gray-50 dark:bg-gray-950">
             <div className="absolute inset-0 pattern-dots opacity-30" />
 
             <div className="relative z-10">
                 {/* Header */}
-                <div className="bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+                <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm">
                     <div className="max-w-7xl mx-auto px-6 py-4">
                         <div className="flex justify-between items-center">
                             <div>
-                                <h1 className="text-2xl font-bold text-gray-900">Welcome, {user.name}!</h1>
-                                <p className="text-gray-600 text-sm">{user.email}</p>
+                                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Welcome, {user.name}!</h1>
+                                <p className="text-gray-600 dark:text-gray-400 text-sm">{user.email}</p>
                             </div>
-                            <button
-                                onClick={handleLogout}
-                                className="px-4 py-2 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-all flex items-center gap-2"
-                            >
-                                <LogOut size={18} />
-                                Logout
-                            </button>
+                            <div className="flex items-center gap-3">
+                                <ThemeToggle />
+                                <button
+                                    onClick={handleLogout}
+                                    className="px-4 py-2 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all flex items-center gap-2"
+                                >
+                                    <LogOut size={18} />
+                                    Logout
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,8 +155,8 @@ export default function CandidateDashboard() {
                                     <BookOpen className="text-purple-600" size={24} />
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-gray-900">{upcomingAssessments.length}</div>
-                                    <div className="text-sm text-gray-600">Upcoming Tests</div>
+                                    <div className="text-3xl font-bold text-gray-900 dark:text-white">{upcomingAssessments.filter(a => a.status === 'upcoming').length}</div>
+                                    <div className="text-sm text-gray-600 dark:text-gray-400">Upcoming Tests</div>
                                 </div>
                             </div>
                         </div>
@@ -162,8 +167,8 @@ export default function CandidateDashboard() {
                                     <Trophy className="text-green-600" size={24} />
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-gray-900">{pastResults.length}</div>
-                                    <div className="text-sm text-gray-600">Completed</div>
+                                    <div className="text-3xl font-bold text-gray-900 dark:text-white">{pastResults.length}</div>
+                                    <div className="text-sm text-gray-600 dark:text-gray-400">Completed</div>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +179,7 @@ export default function CandidateDashboard() {
                                     <TrendingUp className="text-blue-600" size={24} />
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-gray-900">
+                                    <div className="text-3xl font-bold text-gray-900 dark:text-white">
                                         {pastResults.length > 0
                                             ? Math.round(
                                                 pastResults.reduce((acc, r) => acc + (r.score / r.max_score) * 100, 0) /
@@ -182,7 +187,7 @@ export default function CandidateDashboard() {
                                             )
                                             : 0}%
                                     </div>
-                                    <div className="text-sm text-gray-600">Avg Score</div>
+                                    <div className="text-sm text-gray-600 dark:text-gray-400">Avg Score</div>
                                 </div>
                             </div>
                         </div>
@@ -190,11 +195,11 @@ export default function CandidateDashboard() {
 
                     {/* Upcoming Assessments */}
                     <div className="mb-12">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Assessments</h2>
-                        {upcomingAssessments.length === 0 ? (
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Upcoming Assessments</h2>
+                        {upcomingAssessments.filter(a => a.status === 'upcoming').length === 0 ? (
                             <div className="card-premium p-12 text-center">
                                 <Calendar className="mx-auto text-gray-400 mb-4" size={48} />
-                                <p className="text-gray-600">No upcoming assessments</p>
+                                <p className="text-gray-600 dark:text-gray-400">No upcoming assessments</p>
                             </div>
                         ) : (
                             <div className="grid gap-4">
@@ -202,11 +207,11 @@ export default function CandidateDashboard() {
                                     <div key={assessment.id} className="card-premium p-6 hover:shadow-lg transition-shadow">
                                         <div className="flex justify-between items-start">
                                             <div className="flex-1">
-                                                <h3 className="text-xl font-bold text-gray-900 mb-2">{assessment.title}</h3>
+                                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{assessment.title}</h3>
                                                 {assessment.description && (
-                                                    <p className="text-gray-600 mb-4">{assessment.description}</p>
+                                                    <p className="text-gray-600 dark:text-gray-400 mb-4">{assessment.description}</p>
                                                 )}
-                                                <div className="flex gap-4 text-sm text-gray-500">
+                                                <div className="flex gap-4 text-sm text-gray-500 dark:text-gray-400">
                                                     <div className="flex items-center gap-2">
                                                         <Calendar size={16} />
                                                         <span>{formatDate(assessment.scheduled_for)}</span>
@@ -228,16 +233,16 @@ export default function CandidateDashboard() {
                                         </div>
                                     </div>
                                 ))}
-                                {upcomingAssessments.length > 4 && (
+                                {upcomingAssessments.filter(a => a.status === 'upcoming').length > 4 && (
                                     <div className="text-center mt-6">
                                         <button
                                             onClick={() => setShowAllUpcoming(!showAllUpcoming)}
-                                            className="px-6 py-3 bg-white border-2 border-purple-300 text-purple-700 font-semibold rounded-xl hover:bg-purple-50 transition-all flex items-center gap-2 mx-auto"
+                                            className="px-6 py-3 bg-white dark:bg-gray-800 border-2 border-purple-300 dark:border-purple-700 text-purple-700 dark:text-purple-400 font-semibold rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/30 transition-all flex items-center gap-2 mx-auto"
                                         >
                                             {showAllUpcoming ? 'Show Less' : 'View More'}
-                                            <ChevronDown 
-                                                size={20} 
-                                                className={`transform transition-transform ${showAllUpcoming ? 'rotate-180' : ''}`} 
+                                            <ChevronDown
+                                                size={20}
+                                                className={`transform transition-transform ${showAllUpcoming ? 'rotate-180' : ''}`}
                                             />
                                         </button>
                                     </div>
@@ -248,11 +253,11 @@ export default function CandidateDashboard() {
 
                     {/* Past Results */}
                     <div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Recent Results</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Recent Results</h2>
                         {pastResults.length === 0 ? (
                             <div className="card-premium p-12 text-center">
                                 <Trophy className="mx-auto text-gray-400 mb-4" size={48} />
-                                <p className="text-gray-600">No completed assessments yet</p>
+                                <p className="text-gray-600 dark:text-gray-400">No completed assessments yet</p>
                             </div>
                         ) : (
                             <div className="grid gap-4">
@@ -260,14 +265,14 @@ export default function CandidateDashboard() {
                                     <div key={idx} className="card-premium p-6">
                                         <div className="flex justify-between items-center">
                                             <div>
-                                                <h3 className="font-bold text-gray-900 mb-1">{result.assessment_title}</h3>
-                                                <p className="text-sm text-gray-500">{formatDate(result.graded_at)}</p>
+                                                <h3 className="font-bold text-gray-900 dark:text-white mb-1">{result.assessment_title}</h3>
+                                                <p className="text-sm text-gray-500 dark:text-gray-400">{formatDate(result.graded_at)}</p>
                                             </div>
                                             <div className="text-right">
                                                 <div className="text-3xl font-bold text-purple-600">
                                                     {Math.round((result.score / result.max_score) * 100)}%
                                                 </div>
-                                                <div className="text-sm text-gray-500">
+                                                <div className="text-sm text-gray-500 dark:text-gray-400">
                                                     {result.score}/{result.max_score} points
                                                 </div>
                                             </div>
@@ -278,12 +283,12 @@ export default function CandidateDashboard() {
                                     <div className="text-center mt-6">
                                         <button
                                             onClick={() => setShowAllResults(!showAllResults)}
-                                            className="px-6 py-3 bg-white border-2 border-purple-300 text-purple-700 font-semibold rounded-xl hover:bg-purple-50 transition-all flex items-center gap-2 mx-auto"
+                                            className="px-6 py-3 bg-white dark:bg-gray-800 border-2 border-purple-300 dark:border-purple-700 text-purple-700 dark:text-purple-400 font-semibold rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/30 transition-all flex items-center gap-2 mx-auto"
                                         >
                                             {showAllResults ? 'Show Less' : 'View More'}
-                                            <ChevronDown 
-                                                size={20} 
-                                                className={`transform transition-transform ${showAllResults ? 'rotate-180' : ''}`} 
+                                            <ChevronDown
+                                                size={20}
+                                                className={`transform transition-transform ${showAllResults ? 'rotate-180' : ''}`}
                                             />
                                         </button>
                                     </div>

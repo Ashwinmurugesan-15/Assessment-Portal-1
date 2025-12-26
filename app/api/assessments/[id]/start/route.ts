@@ -14,13 +14,13 @@ export async function POST(
             return NextResponse.json({ error: 'user_id is required' }, { status: 400 });
         }
 
-        const assessment = db.getAssessment(id);
+        const assessment = await await db.getAssessment(id);
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
         // Mark as started
-        db.markAssessmentStarted(id, user_id);
+        await db.markAssessmentStarted(id, user_id);
 
         return NextResponse.json({ success: true, message: 'Assessment started' });
     } catch (error) {

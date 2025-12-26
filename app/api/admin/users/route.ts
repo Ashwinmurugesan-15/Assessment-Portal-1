@@ -4,10 +4,7 @@ import { db } from '@/lib/db';
 export async function GET(request: NextRequest) {
     try {
         // Get all users
-        const candidates = db.getAllCandidates();
-        const examiners = db.getAllExaminers();
-
-        const allUsers = [...candidates, ...examiners];
+        const allUsers = await await db.getAllUsers();
 
         // Format for frontend (remove passwords)
         const formattedUsers = allUsers.map(u => ({
@@ -41,7 +38,7 @@ export async function DELETE(request: NextRequest) {
         }
 
         // Verify admin permissions (you can add admin role check here)
-        const adminUser = db.getUserById(admin_id);
+        const adminUser = await await db.getUserById(admin_id);
         if (!adminUser) {
             return NextResponse.json(
                 { error: 'Admin user not found' },
@@ -50,7 +47,7 @@ export async function DELETE(request: NextRequest) {
         }
 
         // Check if user exists
-        const userToDelete = db.getUserById(user_id);
+        const userToDelete = await await db.getUserById(user_id);
         if (!userToDelete) {
             return NextResponse.json(
                 { error: 'User not found' },
@@ -59,10 +56,10 @@ export async function DELETE(request: NextRequest) {
         }
 
         // Delete the user (this also removes them from assessments)
-        db.deleteUser(user_id);
+        await db.deleteUser(user_id);
 
         return NextResponse.json({
-            message: `${userToDelete.role === 'candidate' ? 'Candidate' : 'Examiner'} deleted successfully`,
+            message: `${userToDelete.role.charAt(0).toUpperCase() + userToDelete.role.slice(1)} deleted successfully`,
             deleted_user: {
                 id: userToDelete.id,
                 name: userToDelete.name,
