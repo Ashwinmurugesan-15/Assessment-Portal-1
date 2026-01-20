@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
+import { QuestionWithAnswer } from '@/types';
 
 export async function GET(
     req: NextRequest,
     { params }: { params: Promise<{ id: string }> }
 ) {
     const { id } = await params;
-    const assessment = await await db.getAssessment(id);
+    const assessment = await db.getAssessment(id);
 
     if (!assessment) {
         return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
@@ -25,7 +26,7 @@ export async function GET(
             );
         }
 
-        const attemptCount = await await db.getUserAttemptCount(id, userId);
+        const attemptCount = await db.getUserAttemptCount(id, userId);
         const retakePermissions = assessment.retake_permissions || [];
         const hasRetakePermission = retakePermissions.includes(userId);
 
@@ -41,8 +42,8 @@ export async function GET(
         }
     }
 
-    // Strip correct answers
-    const questions = assessment.questions.map(({ correct_option_id, explanation, ...q }) => q);
+    // Strip correct answers - using explicit type to avoid exposing sensitive data
+    const questions = assessment.questions.map(({ correct_option_id: _correctId, explanation: _explanation, ...q }: QuestionWithAnswer) => q);
 
     return NextResponse.json({
         assessment_id: assessment.assessment_id || (assessment as any).id,

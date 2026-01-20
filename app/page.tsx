@@ -154,7 +154,7 @@ export default function LoginPage() {
                                     value={formData.email}
                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                     className="w-full pl-14 pr-4 py-3.5 bg-[#eef2ff] dark:bg-gray-800 border-none rounded-2xl text-[#1e293b] dark:text-white placeholder:text-[#94a3b8] focus:ring-2 focus:ring-indigo-500 focus:outline-none transition-all text-base"
-                                    placeholder="gokul@gmail.com"
+                                    placeholder="example@gmail.com"
                                     required
                                 />
                             </div>

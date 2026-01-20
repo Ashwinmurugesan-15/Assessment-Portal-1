@@ -9,7 +9,7 @@ export async function GET(
         const { id, userId } = await params;
 
         // Get assessment details
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
         if (!assessment) {
             return NextResponse.json(
                 { error: 'Assessment not found' },
@@ -18,7 +18,7 @@ export async function GET(
         }
 
         // Get user details
-        const user = await await db.getUserById(userId);
+        const user = await db.getUserById(userId);
         if (!user) {
             return NextResponse.json(
                 { error: 'User not found' },
@@ -27,7 +27,7 @@ export async function GET(
         }
 
         // Get all results for this user and assessment
-        const allResults = await await db.getResults(id);
+        const allResults = await db.getResults(id);
         const userResults = allResults
             .filter(r => r.user_id === userId)
             .sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());

@@ -4,7 +4,7 @@ import { AdminAnalytics } from '@/types';
 
 export async function GET() {
     try {
-        const allResults = await await db.getAllResults();
+        const allResults = await db.getAllResults();
 
         // Group by assessment
         const assessmentGroups: Record<string, typeof allResults> = {};

@@ -11,10 +11,10 @@ export async function GET(request: NextRequest) {
         }
 
         // Fetch assessments assigned to this candidate
-        const assessments = await await db.getAssessmentsByCandidate(userId);
+        const assessments = await db.getAssessmentsByCandidate(userId);
 
         // Fetch user results to check completion status
-        const userResults = await await db.getResultsByUser(userId);
+        const userResults = await db.getResultsByUser(userId);
 
         // Prepare data for the frontend
         const formattedAssessments = assessments.map(a => {

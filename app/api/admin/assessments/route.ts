@@ -3,7 +3,7 @@ import { db } from '@/lib/db';
 
 export async function GET() {
     try {
-        const assessments = await await db.getAllAssessments();
+        const assessments = await db.getAllAssessments();
 
         // Format for frontend
         const formattedAssessments = assessments.map(a => ({

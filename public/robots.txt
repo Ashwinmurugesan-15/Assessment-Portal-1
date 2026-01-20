@@ -1,0 +1,13 @@
+# Assessment Portal Robots.txt
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /examiner/
+Disallow: /candidate/dashboard
+Disallow: /assessment/
+
+# Sitemaps
+Sitemap: https://your-production-domain.com/sitemap.xml

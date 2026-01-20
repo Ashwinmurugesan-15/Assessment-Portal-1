@@ -14,11 +14,11 @@ export async function GET(request: NextRequest) {
         }
 
         // Get all results for this user
-        const userResults = await await db.getResultsByUser(userId);
+        const userResults = await db.getResultsByUser(userId);
 
-        // Format for frontend
-        const formattedResults = userResults.map(r => {
-            const assessment = await await db.getAssessment(r.assessment_id);
+        // Format for frontend - use Promise.all for async operations
+        const formattedResults = await Promise.all(userResults.map(async (r) => {
+            const assessment = await db.getAssessment(r.assessment_id);
             return {
                 assessment_id: r.assessment_id,
                 assessment_title: assessment ? assessment.title : 'Unknown Assessment',
@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
                 max_score: r.result.max_score,
                 graded_at: r.result.graded_at
             };
-        });
+        }));
 
         return NextResponse.json({ results: formattedResults });
 

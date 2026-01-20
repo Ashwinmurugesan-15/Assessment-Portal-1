@@ -11,16 +11,24 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "start:prod": "NODE_ENV=production next start -p ${PORT:-3000}",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit",
+    "validate": "npm run type-check && npm run lint",
+    "prebuild": "npm run validate",
     "seed": "tsx lib/seed.ts",
     "db:init": "tsx lib/db-init.ts",
     "db:migrate": "tsx lib/migrate-data.ts",
     "db:verify": "tsx lib/verify-migration.ts",
-    "prod:build": "npm run type-check && npm run lint && npm run build",
+    "prod:build": "npm run validate && npm run build",
     "prod:start": "NODE_ENV=production npm start",
-    "health": "curl http://localhost:3000/api/health || echo 'Server not responding'"
+    "docker:build": "docker build -t assessment-engine .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env.production assessment-engine",
+    "docker:compose": "docker-compose up -d",
+    "health": "curl -f http://localhost:3000/api/health || echo 'Server not responding'",
+    "analyze": "ANALYZE=true npm run build",
+    "clean": "rm -rf .next node_modules/.cache"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -40,6 +48,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/nodemailer": "^7.0.4",

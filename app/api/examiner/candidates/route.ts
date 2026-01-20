@@ -4,7 +4,7 @@ import { db } from '@/lib/db';
 export async function GET(request: NextRequest) {
     try {
         // Get all candidates
-        const candidates = await await db.getAllCandidates();
+        const candidates = await db.getAllCandidates();
 
         // Format for frontend (remove passwords)
         const formattedCandidates = candidates.map(c => ({

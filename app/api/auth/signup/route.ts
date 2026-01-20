@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
         const finalPassword = password || Math.random().toString(36).slice(-8);
 
         // Check if user already exists
-        const existingUser = await await db.getUserByEmail(email);
+        const existingUser = await db.getUserByEmail(email);
         if (existingUser) {
             return NextResponse.json(
                 { error: 'User with this email already exists' },

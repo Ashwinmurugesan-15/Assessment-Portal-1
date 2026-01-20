@@ -14,7 +14,7 @@ export async function POST(
             return NextResponse.json({ error: 'user_id is required' }, { status: 400 });
         }
 
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }

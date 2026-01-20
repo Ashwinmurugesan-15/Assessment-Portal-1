@@ -9,7 +9,7 @@ export async function GET(
         const { id } = await params;
 
         // Get assessment
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json(
@@ -19,7 +19,7 @@ export async function GET(
         }
 
         // Get results for this assessment
-        const results = await await db.getResults(id);
+        const results = await db.getResults(id);
 
         // Sort all results by date first to ensure correct order
         const sortedResults = [...results].sort((a, b) =>
@@ -29,9 +29,9 @@ export async function GET(
         // Track attempts per user
         const userAttempts: Record<string, number> = {};
 
-        // Format results with user info
-        const formattedResults = sortedResults.map(r => {
-            const user = await await db.getUserById(r.user_id);
+        // Format results with user info - using Promise.all for async user lookups
+        const formattedResults = await Promise.all(sortedResults.map(async (r) => {
+            const user = await db.getUserById(r.user_id);
             const retakeGranted = assessment?.retake_permissions?.includes(r.user_id) || false;
 
             // Increment attempt count for this user
@@ -49,7 +49,7 @@ export async function GET(
                 attempt_number: attemptNumber,
                 is_reattempt: attemptNumber > 1
             };
-        });
+        }));
 
         return NextResponse.json({
             assessment,
@@ -80,7 +80,7 @@ export async function PATCH(
             );
         }
 
-        const updated = await await db.updateAssessment(id, { assigned_to });
+        const updated = await db.updateAssessment(id, { assigned_to });
 
         if (!updated) {
             return NextResponse.json(

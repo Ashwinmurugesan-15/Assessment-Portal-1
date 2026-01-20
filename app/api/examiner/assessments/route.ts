@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
         }
 
         // Get assessments created by this examiner
-        const assessments = await await db.getAssessmentsByExaminer(examinerId);
+        const assessments = await db.getAssessmentsByExaminer(examinerId);
 
         // Calculate stats
         const totalCandidates = new Set(
@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
         ).size;
 
         // Get all results for these assessments
-        const allResults = await await db.getAllResults();
+        const allResults = await db.getAllResults();
         const relevantResults = allResults.filter(r =>
             assessments.some(a => (a.assessment_id || (a as any).id) === r.assessment_id)
         );

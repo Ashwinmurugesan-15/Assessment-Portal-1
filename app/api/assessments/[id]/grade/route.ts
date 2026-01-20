@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
-import { GradingRequest, GradingResult, DetailedResult } from '@/types';
+import { GradingRequest, GradingResult, DetailedResult, QuestionWithAnswer } from '@/types';
 
 export async function POST(
     req: NextRequest,
@@ -9,14 +9,14 @@ export async function POST(
     try {
         const { id } = await params;
         const body: GradingRequest = await req.json();
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
         // Check if user has already attempted this assessment
-        const attemptCount = await await db.getUserAttemptCount(id, body.user_id);
+        const attemptCount = await db.getUserAttemptCount(id, body.user_id);
         const retakePermissions = assessment.retake_permissions || [];
         const hasRetakePermission = retakePermissions.includes(body.user_id);
 
@@ -40,7 +40,7 @@ export async function POST(
         let correctCount = 0;
         const detailed: DetailedResult[] = [];
 
-        assessment.questions.forEach(q => {
+        assessment.questions.forEach((q: QuestionWithAnswer) => {
             const userAnswer = body.answers.find(a => a.question_id === q.id);
             const submittedOptionId = userAnswer ? userAnswer.option_id : '';
             const isCorrect = submittedOptionId === q.correct_option_id;

@@ -9,17 +9,17 @@ export async function GET(
         const { userId } = await params;
 
         // Get user details
-        const user = await await db.getUserById(userId);
+        const user = await db.getUserById(userId);
         if (!user) {
             return NextResponse.json({ error: 'User not found' }, { status: 404 });
         }
 
         // Get all results for this user across all assessments
-        const allResults = await await db.getResultsByUser(userId);
+        const allResults = await db.getResultsByUser(userId);
 
-        // Format results with assessment titles
-        const formattedResults = allResults.map(r => {
-            const assessment = await await db.getAssessment(r.assessment_id);
+        // Format results with assessment titles - use Promise.all for async operations
+        const formattedResults = await Promise.all(allResults.map(async (r) => {
+            const assessment = await db.getAssessment(r.assessment_id);
             return {
                 ...r,
                 assessment_title: assessment?.title || 'Unknown Assessment',
@@ -28,7 +28,7 @@ export async function GET(
                 percentage: Math.round((r.result.score / r.result.max_score) * 100),
                 graded_at: r.result.graded_at
             };
-        });
+        }));
 
         return NextResponse.json({
             user: {

@@ -4,7 +4,7 @@ import { db } from '@/lib/db';
 export async function GET(request: NextRequest) {
     try {
         // Get all users
-        const allUsers = await await db.getAllUsers();
+        const allUsers = await db.getAllUsers();
 
         // Format for frontend (remove passwords)
         const formattedUsers = allUsers.map(u => ({
@@ -38,7 +38,7 @@ export async function DELETE(request: NextRequest) {
         }
 
         // Verify admin permissions (you can add admin role check here)
-        const adminUser = await await db.getUserById(admin_id);
+        const adminUser = await db.getUserById(admin_id);
         if (!adminUser) {
             return NextResponse.json(
                 { error: 'Admin user not found' },
@@ -47,7 +47,7 @@ export async function DELETE(request: NextRequest) {
         }
 
         // Check if user exists
-        const userToDelete = await await db.getUserById(user_id);
+        const userToDelete = await db.getUserById(user_id);
         if (!userToDelete) {
             return NextResponse.json(
                 { error: 'User not found' },

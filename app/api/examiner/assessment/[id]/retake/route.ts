@@ -17,14 +17,14 @@ export async function POST(
             );
         }
 
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
         // Get the examiner/admin user to check their role
-        const examiner = await await db.getUserById(examiner_id);
+        const examiner = await db.getUserById(examiner_id);
 
         // Verify examiner owns this assessment OR is an admin
         if (assessment.created_by !== examiner_id && examiner?.role !== 'admin') {
@@ -35,7 +35,7 @@ export async function POST(
         }
 
         // Check if candidate has attempted the assessment
-        const attemptCount = await await db.getUserAttemptCount(id, candidate_id);
+        const attemptCount = await db.getUserAttemptCount(id, candidate_id);
         if (attemptCount === 0) {
             return NextResponse.json(
                 { error: 'Candidate has not attempted this assessment yet' },
@@ -86,14 +86,14 @@ export async function DELETE(
             );
         }
 
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
 
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
         // Get the examiner/admin user to check their role
-        const examiner = await await db.getUserById(examiner_id);
+        const examiner = await db.getUserById(examiner_id);
 
         // Verify examiner owns this assessment OR is an admin
         if (assessment.created_by !== examiner_id && examiner?.role !== 'admin') {

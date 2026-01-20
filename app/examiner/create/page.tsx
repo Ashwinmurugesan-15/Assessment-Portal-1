@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Upload, Sparkles, FileText, Loader2, Wand2, ArrowLeft, Users, Calendar, Clock, Info, CheckCircle2 } from 'lucide-react';
+import { Upload, Sparkles, FileText, Loader2, Wand2, ArrowLeft, Users, Calendar, Clock, Info, CheckCircle2, Download } from 'lucide-react';
 import NextImage from 'next/image';
 import { getApiUrl } from '@/lib/api-utils';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -312,13 +312,120 @@ export default function CreateAssessmentPage() {
                                                 <Info size={20} />
                                                 PDF/TXT Formatting Guide
                                             </div>
-                                            <button
-                                                type="button"
-                                                onClick={() => setShowGuide(!showGuide)}
-                                                className="text-blue-600 text-sm font-semibold hover:underline"
-                                            >
-                                                {showGuide ? 'Hide Guide' : 'Show Guide'}
-                                            </button>
+                                            <div className="flex items-center gap-3">
+                                                <button
+                                                    type="button"
+                                                    onClick={() => {
+                                                        const content = `EXAMPLE QUESTIONS FILE FOR ASSESSMENT PORTAL
+=============================================
+
+This file shows the correct format for uploading questions.
+You can use PDF, TXT, or CSV files.
+
+
+FORMAT RULES:
+-------------
+1. Start each question with a number (e.g., 1. or Q1:)
+2. Use A. B. C. D. for options (one per line)
+3. Mark the answer with "Ans:" at the end
+
+
+SAMPLE QUESTIONS:
+-----------------
+
+1. What is React?
+A. A JavaScript library for building user interfaces
+B. A programming language
+C. A database management system
+D. An operating system
+Ans: A
+
+2. Which hook is used to manage state in a functional component?
+A. useEffect
+B. useState
+C. useContext
+D. useReducer
+Ans: B
+
+3. What does JSX stand for?
+A. JavaScript XML
+B. Java Syntax Extension
+C. JSON XML
+D. JavaScript Extension
+Ans: A
+
+4. Which of the following is NOT a valid React hook?
+A. useState
+B. useEffect
+C. useClass
+D. useCallback
+Ans: C
+
+5. What is the purpose of the useEffect hook?
+A. To manage component state
+B. To perform side effects in functional components
+C. To create custom hooks
+D. To handle form submissions
+Ans: B
+
+6. In React, what is a prop?
+A. A way to store component state
+B. Data passed from parent to child component
+C. A method to update the DOM
+D. A type of React component
+Ans: B
+
+7. What command creates a new React application?
+A. npm init react-app
+B. npx create-react-app
+C. npm new react
+D. react create-app
+Ans: B
+
+8. Which method is called when a component is first mounted?
+A. componentWillUnmount
+B. componentDidUpdate
+C. componentDidMount
+D. shouldComponentUpdate
+Ans: C
+
+9. What is the virtual DOM?
+A. A direct copy of the real DOM
+B. A lightweight representation of the real DOM
+C. A server-side rendering technique
+D. A database for storing DOM elements
+Ans: B
+
+10. How do you conditionally render in React?
+A. Using if-else statements only
+B. Using switch statements only
+C. Using ternary operators or logical && operators
+D. Conditional rendering is not possible
+Ans: C
+`;
+                                                        const blob = new Blob([content], { type: 'text/plain' });
+                                                        const url = URL.createObjectURL(blob);
+                                                        const a = document.createElement('a');
+                                                        a.href = url;
+                                                        a.download = 'example-questions.txt';
+                                                        document.body.appendChild(a);
+                                                        a.click();
+                                                        document.body.removeChild(a);
+                                                        URL.revokeObjectURL(url);
+                                                    }}
+                                                    className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition-all shadow-sm hover:shadow-md"
+                                                >
+                                                    <Download size={16} />
+                                                    Download Example
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => setShowGuide(!showGuide)}
+                                                    className="text-blue-600 text-sm font-semibold hover:underline"
+                                                >
+                                                    {showGuide ? 'Hide Guide' : 'Show Guide'}
+                                                </button>
+                                            </div>
                                         </div>
 
                                         {showGuide && (

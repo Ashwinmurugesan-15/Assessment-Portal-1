@@ -1,4 +1,4 @@
-import pool from './lib/db-pool.js';
+import pool from './db-pool';
 
 async function verify() {
     try {

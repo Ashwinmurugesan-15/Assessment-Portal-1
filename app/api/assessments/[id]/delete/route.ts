@@ -7,16 +7,16 @@ export async function DELETE(
 ) {
     try {
         const { id } = await params;
-        
+
         // Check if assessment exists
-        const assessment = await await db.getAssessment(id);
+        const assessment = await db.getAssessment(id);
         if (!assessment) {
             return NextResponse.json({ error: 'Assessment not found' }, { status: 404 });
         }
 
         // Delete the assessment and related data
-        const result = await await db.deleteAssessment(id);
-        
+        const result = await db.deleteAssessment(id);
+
         if (result) {
             return NextResponse.json({ success: true, message: 'Assessment deleted successfully' });
         } else {
