@@ -320,14 +320,14 @@ export const db = {
 
     updateAssessment: async (id: string, updates: Partial<AssessmentData>) => {
         const fields = Object.keys(updates);
-        const values = Object.values(updates).map(val =>
-            Array.isArray(val) || typeof val === 'object' ? JSON.stringify(val) : val
-        );
+        const values = Object.values(updates);
 
         if (fields.length === 0) return null;
 
         const setClause = fields.map((field, index) => {
             if (field === 'questions') {
+                // For JSONB columns, we ensure it's stringified
+                values[index] = JSON.stringify(values[index]);
                 return `${field} = $${index + 2}::jsonb`;
             }
             return `${field} = $${index + 2}`;

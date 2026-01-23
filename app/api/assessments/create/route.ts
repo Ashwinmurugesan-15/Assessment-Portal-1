@@ -25,16 +25,48 @@ export async function POST(req: NextRequest) {
                 const buffer = Buffer.from(arrayBuffer);
 
                 if (file.name.endsWith('.pdf')) {
-                    const pdf = await import('pdf-parse');
-                    const data = await pdf.default(buffer);
-                    fileContent = data.text;
+                    try {
+                        const pdf = await import('pdf-parse');
+                        const data = await pdf.default(buffer);
+                        fileContent = data.text;
+                        console.log('PDF processed successfully, extracted text length:', fileContent.length);
+
+                        if (!fileContent || fileContent.trim().length === 0) {
+                            return NextResponse.json(
+                                { error: 'The PDF appears to be empty or is image-based. Please use a text-based PDF or convert it to TXT/CSV format.' },
+                                { status: 400 }
+                            );
+                        }
+                    } catch (pdfError: any) {
+                        console.error('PDF parsing error:', pdfError);
+                        return NextResponse.json(
+                            { error: `PDF parsing failed: ${pdfError.message || 'Unknown error'}. Try converting the PDF to TXT or CSV format.` },
+                            { status: 400 }
+                        );
+                    }
                 } else {
-                    fileContent = buffer.toString('utf-8');
+                    try {
+                        fileContent = buffer.toString('utf-8');
+                        console.log('Text file processed successfully, content length:', fileContent.length);
+
+                        if (!fileContent || fileContent.trim().length === 0) {
+                            return NextResponse.json(
+                                { error: 'The uploaded file is empty. Please provide a file with questions.' },
+                                { status: 400 }
+                            );
+                        }
+                    } catch (textError: any) {
+                        console.error('Text file reading error:', textError);
+                        return NextResponse.json(
+                            { error: `Failed to read the file: ${textError.message || 'Unknown error'}` },
+                            { status: 400 }
+                        );
+                    }
                 }
-            } catch (fileError) {
+            } catch (fileError: any) {
                 console.error('File processing error:', fileError);
                 return NextResponse.json(
-                    { error: 'Failed to process the uploaded file. It might be corrupted or in an unsupported format.' },
+                    { error: `Failed to process the uploaded file: ${fileError.message || 'It might be corrupted or in an unsupported format.'}` },
                     { status: 400 }
                 );
             }

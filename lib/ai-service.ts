@@ -1,5 +1,6 @@
 import { QuestionWithAnswer } from '@/types';
 import { generateId } from './utils';
+import Papa from 'papaparse';
 
 /**
  * Simulated AI service.
@@ -15,7 +16,17 @@ export async function generateQuestionsFromAI(
     await new Promise(resolve => setTimeout(resolve, 1500));
 
     if (fileContent) {
-        return parseContentWithHeuristics(fileContent);
+        // Remove Byte Order Mark (BOM) if it exists at the start of the file
+        const cleanContent = fileContent.replace(/^\uFEFF/, '');
+
+        // Detect if it's a CSV by checking for typical headers anywhere in the first few lines
+        const firstLine = cleanContent.split('\n')[0].toLowerCase();
+        const isCSV = firstLine.includes('question') && (firstLine.includes('option_a') || firstLine.includes('option a'));
+
+        if (isCSV) {
+            return parseCSVContent(cleanContent);
+        }
+        return parseContentWithHeuristics(cleanContent);
     }
 
     if (prompt && prompt.trim().length > 0) {
@@ -23,6 +34,49 @@ export async function generateQuestionsFromAI(
     }
 
     return [];
+}
+
+/** Specific parser for CSV files following the Question,Option_A,Option_B,Option_C,Option_D,Answer format */
+function parseCSVContent(content: string): QuestionWithAnswer[] {
+    const results = Papa.parse(content, {
+        header: true,
+        skipEmptyLines: 'greedy', // Better at handling trailing whitespace
+    });
+
+    const questions: QuestionWithAnswer[] = [];
+
+    results.data.forEach((rawRow: any) => {
+        // Normalize keys (handle spaces and case sensitivity from Excel)
+        const row: any = {};
+        Object.keys(rawRow).forEach(key => {
+            row[key.trim().toLowerCase().replace(/\s+/g, '_')] = rawRow[key];
+        });
+
+        // Map normalized keys to our expected format
+        const qText = row.question || row.text || row.q;
+        const optA = row.option_a || row.optiona || row.a;
+        const optB = row.option_b || row.optionb || row.b;
+        const optC = row.option_c || row.optionc || row.c;
+        const optD = row.option_d || row.optiond || row.d;
+        const answer = (row.answer || row.correct || '').toString().trim().toUpperCase();
+
+        if (qText && qText.toString().trim().length > 0) {
+            questions.push({
+                id: generateId(),
+                text: qText.toString().trim(),
+                options: [
+                    { id: 'A', text: (optA || '').toString().trim() },
+                    { id: 'B', text: (optB || '').toString().trim() },
+                    { id: 'C', text: (optC || '').toString().trim() },
+                    { id: 'D', text: (optD || '').toString().trim() },
+                ].filter(o => o.text.length > 0),
+                correct_option_id: ['A', 'B', 'C', 'D'].includes(answer) ? answer : 'A',
+                meta: { source_file: 'uploaded_csv', difficulty: 'medium' }
+            });
+        }
+    });
+
+    return questions;
 }
 
 /** Simple heuristic parser for uploaded text files. */

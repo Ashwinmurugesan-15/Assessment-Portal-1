@@ -6,6 +6,7 @@ import { Upload, Sparkles, FileText, Loader2, Wand2, ArrowLeft, Users, Calendar,
 import NextImage from 'next/image';
 import { getApiUrl } from '@/lib/api-utils';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { jsPDF } from 'jspdf';
 
 interface User {
     id: string;
@@ -119,6 +120,100 @@ export default function CreateAssessmentPage() {
                 : [...prev.selectedCandidates, candidateId]
         }));
     };
+
+    const generateExamplePDF = () => {
+        const doc = new jsPDF();
+
+        // Title
+        doc.setFontSize(16);
+        doc.text('Sample Assessment Questions', 105, 20, { align: 'center' });
+
+        doc.setFontSize(10);
+        doc.text('Format Guide for Question Upload', 105, 28, { align: 'center' });
+
+        // Questions
+        doc.setFontSize(12);
+        let yPosition = 45;
+
+        const questions = [
+            {
+                q: '1. What is React?',
+                options: [
+                    'A) A JavaScript library for building user interfaces',
+                    'B) A programming language',
+                    'C) A database management system',
+                    'D) An operating system'
+                ],
+                answer: 'Answer: A'
+            },
+            {
+                q: '2. Which hook is used to manage state in a functional component?',
+                options: [
+                    'A) useEffect',
+                    'B) useContext',
+                    'C) useState',
+                    'D) useReducer'
+                ],
+                answer: 'Answer: C'
+            },
+            {
+                q: '3. What does JSX stand for?',
+                options: [
+                    'A) JavaScript XML',
+                    'B) Java Syntax Extension',
+                    'C) JSON XML',
+                    'D) JavaScript Extension'
+                ],
+                answer: 'Answer: A'
+            }
+        ];
+
+        questions.forEach((item, index) => {
+            // Check if we need a new page
+            if (yPosition > 250) {
+                doc.addPage();
+                yPosition = 20;
+            }
+
+            // Question
+            doc.setFont('helvetica', 'bold');
+            doc.text(item.q, 20, yPosition);
+            yPosition += 8;
+
+            // Options
+            doc.setFont('helvetica', 'normal');
+            item.options.forEach(option => {
+                doc.text(option, 25, yPosition);
+                yPosition += 7;
+            });
+
+            // Answer
+            doc.setFont('helvetica', 'bold');
+            doc.text(item.answer, 20, yPosition);
+            yPosition += 12;
+        });
+
+        // Instructions at the bottom
+        if (yPosition > 220) {
+            doc.addPage();
+            yPosition = 20;
+        }
+
+        doc.setFontSize(10);
+        doc.setFont('helvetica', 'italic');
+        yPosition += 10;
+        doc.text('Note: Follow this exact format when creating your question file.', 20, yPosition);
+        yPosition += 6;
+        doc.text('- Start each question with a number followed by a period', 20, yPosition);
+        yPosition += 6;
+        doc.text('- List options as A), B), C), D)', 20, yPosition);
+        yPosition += 6;
+        doc.text('- Mark the correct answer with "Answer: [Letter]"', 20, yPosition);
+
+        // Save the PDF
+        doc.save('example-questions.pdf');
+    };
+
 
     if (!user) {
         return (
@@ -310,114 +405,9 @@ export default function CreateAssessmentPage() {
                                         <div className="flex items-center justify-between mb-4">
                                             <div className="flex items-center gap-2 text-blue-800 font-bold">
                                                 <Info size={20} />
-                                                PDF/TXT Formatting Guide
+                                                PDF Formatting Guide
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <button
-                                                    type="button"
-                                                    onClick={() => {
-                                                        const content = `EXAMPLE QUESTIONS FILE FOR ASSESSMENT PORTAL
-=============================================
-
-This file shows the correct format for uploading questions.
-You can use PDF, TXT, or CSV files.
-
-
-FORMAT RULES:
--------------
-1. Start each question with a number (e.g., 1. or Q1:)
-2. Use A. B. C. D. for options (one per line)
-3. Mark the answer with "Ans:" at the end
-
-
-SAMPLE QUESTIONS:
------------------
-
-1. What is React?
-A. A JavaScript library for building user interfaces
-B. A programming language
-C. A database management system
-D. An operating system
-Ans: A
-
-2. Which hook is used to manage state in a functional component?
-A. useEffect
-B. useState
-C. useContext
-D. useReducer
-Ans: B
-
-3. What does JSX stand for?
-A. JavaScript XML
-B. Java Syntax Extension
-C. JSON XML
-D. JavaScript Extension
-Ans: A
-
-4. Which of the following is NOT a valid React hook?
-A. useState
-B. useEffect
-C. useClass
-D. useCallback
-Ans: C
-
-5. What is the purpose of the useEffect hook?
-A. To manage component state
-B. To perform side effects in functional components
-C. To create custom hooks
-D. To handle form submissions
-Ans: B
-
-6. In React, what is a prop?
-A. A way to store component state
-B. Data passed from parent to child component
-C. A method to update the DOM
-D. A type of React component
-Ans: B
-
-7. What command creates a new React application?
-A. npm init react-app
-B. npx create-react-app
-C. npm new react
-D. react create-app
-Ans: B
-
-8. Which method is called when a component is first mounted?
-A. componentWillUnmount
-B. componentDidUpdate
-C. componentDidMount
-D. shouldComponentUpdate
-Ans: C
-
-9. What is the virtual DOM?
-A. A direct copy of the real DOM
-B. A lightweight representation of the real DOM
-C. A server-side rendering technique
-D. A database for storing DOM elements
-Ans: B
-
-10. How do you conditionally render in React?
-A. Using if-else statements only
-B. Using switch statements only
-C. Using ternary operators or logical && operators
-D. Conditional rendering is not possible
-Ans: C
-`;
-                                                        const blob = new Blob([content], { type: 'text/plain' });
-                                                        const url = URL.createObjectURL(blob);
-                                                        const a = document.createElement('a');
-                                                        a.href = url;
-                                                        a.download = 'example-questions.txt';
-                                                        document.body.appendChild(a);
-                                                        a.click();
-                                                        document.body.removeChild(a);
-                                                        URL.revokeObjectURL(url);
-                                                    }}
-                                                    className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition-all shadow-sm hover:shadow-md"
-                                                >
-                                                    <Download size={16} />
-                                                    Download Example
-                                                </button>
                                                 <button
                                                     type="button"
                                                     onClick={() => setShowGuide(!showGuide)}
@@ -428,34 +418,63 @@ Ans: C
                                             </div>
                                         </div>
 
+                                        {/* Download Format Examples */}
+                                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                                            <span className="text-sm font-semibold text-blue-800">Download Example:</span>
+                                            <a
+                                                href="/example-questions.csv"
+                                                download="example-questions.csv"
+                                                className="flex items-center gap-2 px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition-all shadow-sm hover:shadow-md"
+                                            >
+                                                <Download size={14} />
+                                                CSV
+                                            </a>
+                                            <button
+                                                type="button"
+                                                onClick={generateExamplePDF}
+                                                className="flex items-center gap-2 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-sm font-semibold rounded-lg transition-all shadow-sm hover:shadow-md"
+                                            >
+                                                <Download size={14} />
+                                                PDF
+                                            </button>
+                                            <a
+                                                href="/example-questions.txt"
+                                                download="example-questions.txt"
+                                                className="flex items-center gap-2 px-3 py-1.5 bg-gray-500 hover:bg-gray-600 text-white text-sm font-semibold rounded-lg transition-all shadow-sm hover:shadow-md"
+                                            >
+                                                <Download size={14} />
+                                                TXT
+                                            </a>
+                                        </div>
+
                                         {showGuide && (
                                             <div className="grid md:grid-cols-2 gap-6 animate-in fade-in slide-in-from-top-2 duration-300">
                                                 <div className="space-y-3">
-                                                    <h4 className="text-sm font-bold text-blue-900 border-b border-blue-200 pb-1">Structure per Question</h4>
+                                                    <h4 className="text-sm font-bold text-blue-900 border-b border-blue-200 pb-1">PDF Structure</h4>
                                                     <ul className="text-sm text-blue-700 space-y-2">
                                                         <li className="flex gap-2">
                                                             <CheckCircle2 size={14} className="mt-1 flex-shrink-0" />
-                                                            <span><strong>Numbering:</strong> Start with <code>1. </code> or <code>Q1: </code></span>
+                                                            <span><strong>Question Format:</strong> Start each question with a number followed by a period (e.g., <code>1.</code>)</span>
                                                         </li>
                                                         <li className="flex gap-2">
                                                             <CheckCircle2 size={14} className="mt-1 flex-shrink-0" />
-                                                            <span><strong>Options:</strong> Use <code>A. B. C. D. </code> (one per line)</span>
+                                                            <span><strong>Options:</strong> List options as <code>A)</code>, <code>B)</code>, <code>C)</code>, <code>D)</code></span>
                                                         </li>
                                                         <li className="flex gap-2">
                                                             <CheckCircle2 size={14} className="mt-1 flex-shrink-0" />
-                                                            <span><strong>Answer Key:</strong> Include <code>Ans: A </code> at the end</span>
+                                                            <span><strong>Answer:</strong> Mark correct answer with <code>Answer: A</code> (letter only)</span>
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div className="bg-white/50 rounded-xl p-4 border border-blue-200">
-                                                    <h4 className="text-xs font-bold text-blue-900 mb-2 uppercase tracking-wider text-center">Correct Example</h4>
-                                                    <pre className="text-[11px] leading-relaxed font-mono text-blue-800">
-                                                        1. What is React?{'\n'}
-                                                        A. A library{'\n'}
-                                                        B. A framework{'\n'}
-                                                        C. A language{'\n'}
-                                                        D. A database{'\n'}
-                                                        Ans: A
+                                                    <h4 className="text-xs font-bold text-blue-900 mb-2 uppercase tracking-wider text-center">PDF Example</h4>
+                                                    <pre className="text-[10px] leading-relaxed font-mono text-blue-800 overflow-x-auto">
+                                                        {`1. What is React?
+A) A JavaScript library
+B) A programming language
+C) A database
+D) An operating system
+Answer: A`}
                                                     </pre>
                                                 </div>
                                             </div>
