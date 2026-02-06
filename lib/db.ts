@@ -130,9 +130,36 @@ export const db = {
         if (result.rows.length === 0) return null;
 
         const row = result.rows[0];
+        let questions = typeof row.questions === 'string' ? JSON.parse(row.questions) : row.questions;
+
+        // Normalize questions to match current types
+        if (Array.isArray(questions)) {
+            questions = questions.map(q => {
+                // Map 'correctAnswer' (legacy) to 'correct_option_id'
+                if (q.correctAnswer && !q.correct_option_id) {
+                    q.correct_option_id = q.correctAnswer;
+                }
+
+                // Map string options to Option objects
+                if (Array.isArray(q.options) && q.options.length > 0 && typeof q.options[0] === 'string') {
+                    q.options = q.options.map((opt: string) => ({
+                        id: opt,
+                        text: opt
+                    }));
+                }
+
+                // Fallback for correct_option_id if it's still missing but options exist
+                if (!q.correct_option_id && Array.isArray(q.options) && q.options.length > 0) {
+                    q.correct_option_id = q.options[0].id;
+                }
+
+                return q;
+            });
+        }
+
         return {
             ...row,
-            questions: typeof row.questions === 'string' ? JSON.parse(row.questions) : row.questions
+            questions
         };
     },
 

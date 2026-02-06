@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
+import bcrypt from 'bcryptjs';
 
 export async function POST(request: NextRequest) {
     try {
@@ -24,8 +25,10 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Check password (in production, use bcrypt.compare)
-        if (user.password !== password) {
+        // Check password
+        const isValid = await bcrypt.compare(password, user.password);
+
+        if (!isValid) {
             return NextResponse.json(
                 { error: 'Invalid email or password' },
                 { status: 401 }

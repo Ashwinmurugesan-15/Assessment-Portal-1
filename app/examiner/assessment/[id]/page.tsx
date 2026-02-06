@@ -439,10 +439,11 @@ export default function ExaminerAssessmentView() {
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                                    {results.map((result, idx) => {
+                                    {results.map((result) => {
                                         const percentage = Math.round((result.score / result.max_score) * 100);
+                                        const uniqueKey = `${result.user_id}_${result.graded_at}`;
                                         return (
-                                            <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                                            <tr key={uniqueKey} className="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                                                 <td className="px-6 py-4 text-gray-900 dark:text-white font-medium">
                                                     <div className="flex items-center gap-2">
                                                         <span className="font-semibold">

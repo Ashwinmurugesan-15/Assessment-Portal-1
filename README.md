@@ -37,24 +37,43 @@ The Assessment Engine uses **PostgreSQL** for data storage, making it easy to mi
      -d postgres:16
    ```
 
-3. **Configure Environment**
+3. **Initialize Database with Proper Security**
+
+   **Option A: Automated Setup (Recommended - Windows)**
+   ```powershell
+   # Run the PowerShell setup script
+   .\scripts\setup-database.ps1
+   ```
+   This will:
+   - Create dedicated database user
+   - Create dedicated schema
+   - Create all tables and indexes
+   - Populate sample data
+
+   **Option B: Manual Setup**
+   ```bash
+   # Execute DDL script (creates user, schema, tables)
+   psql -U postgres -d assessment_engine -f scripts/ddl.sql
+   
+   # Execute Insert script (populates sample data)
+   psql -U assessment_app_user -d assessment_engine -f scripts/insert.sql
+   ```
+   
+   See [scripts/SETUP_INSTRUCTIONS.md](scripts/SETUP_INSTRUCTIONS.md) for detailed instructions.
+
+4. **Configure Environment**
    
    Copy `.env.example` to `.env.local`:
    ```bash
    cp .env.example .env.local
    ```
 
-   Update `DATABASE_URL` in `.env.local`:
+   Update `DATABASE_URL` in `.env.local` (use dedicated user):
    ```env
-   DATABASE_URL=postgresql://postgres:your_password@localhost:5432/assessment_engine
+   DATABASE_URL=postgresql://assessment_app_user:assessment_pass_2024@localhost:5432/assessment_engine?schema=assessment_schema
    ```
 
-4. **Initialize Database**
-   ```bash
-   npm run db:init
-   ```
-
-5. **Migrate Existing Data** (if you have JSON files)
+5. **Migrate Existing Data** (Optional - if you have JSON files)
    ```bash
    npm run db:migrate
    ```
@@ -128,6 +147,34 @@ The application uses three main tables:
 - **results** - Stores assessment results and analytics (JSONB)
 
 All tables have proper indexes and foreign key constraints for data integrity.
+
+## 📜 Database Scripts
+
+The project includes production-ready database scripts following best practices:
+
+### DDL Script (`scripts/ddl.sql`)
+- ✅ Creates dedicated database user (`assessment_app_user`)
+- ✅ Creates dedicated schema (`assessment_schema`)
+- ✅ Assigns schema ownership to dedicated user
+- ✅ Creates all tables with proper constraints
+- ✅ Creates performance indexes
+- ✅ **Security**: Follows principle of least privilege (no admin user usage)
+
+### Insert Script (`scripts/insert.sql`)
+- ✅ Populates sample data for testing
+- ✅ Includes 8 users (admin, examiners, candidates)
+- ✅ Includes 5 sample assessments (various difficulty levels)
+- ✅ Includes 3 sample results
+- ✅ Safe for re-execution (uses `ON CONFLICT DO NOTHING`)
+
+### Setup Automation
+- **Windows**: Use `scripts/setup-database.ps1` for automated setup
+- **Manual**: See [scripts/SETUP_INSTRUCTIONS.md](scripts/SETUP_INSTRUCTIONS.md)
+
+**Default Login Credentials** (after running insert script):
+- Admin: `admin@assessmentportal.com` / `admin123`
+- Examiner: `sarah.johnson@assessmentportal.com` / `examiner123`
+- Candidate: `alice.thompson@example.com` / `candidate123`
 
 ## ✨ Production Features
 

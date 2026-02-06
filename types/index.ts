@@ -32,6 +32,7 @@ export interface Option {
 export interface Question {
     id: string;
     text: string;
+    type?: string;
     options: Option[];
     time_limit_seconds?: number;
     meta?: {

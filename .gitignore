@@ -30,11 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# env files (exclude ALL to protect credentials)
+.env
 .env*.local
+.env.development
+.env.production
 !.env.example
-!.env.development
-!.env.production
 
 # vercel
 .vercel
@@ -42,3 +43,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# test files
+test-*.ts
+test_*.txt
+search-*.ts

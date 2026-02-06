@@ -343,29 +343,39 @@ export default function TakeAssessment() {
                         </div>
 
                         <div className="space-y-4">
-                            {currentQ.options.map((opt) => {
-                                const isSelected = answers[currentQ.id] === opt.id;
-                                return (
-                                    <button
-                                        key={opt.id}
-                                        onClick={() => handleOptionSelect(currentQ.id, opt.id)}
-                                        className={`option-card w-full text-left p-5 ${isSelected ? 'selected' : ''}`}
-                                    >
-                                        <div className="flex items-center gap-4">
-                                            <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all ${isSelected ? 'border-purple-600 bg-purple-600' : 'border-gray-300'
-                                                }`}>
-                                                {isSelected && <div className="w-3 h-3 rounded-full bg-white" />}
+                            {currentQ.options && currentQ.options.length > 0 ? (
+                                currentQ.options.map((opt) => {
+                                    const isSelected = answers[currentQ.id] === opt.id;
+                                    return (
+                                        <button
+                                            key={opt.id}
+                                            onClick={() => handleOptionSelect(currentQ.id, opt.id)}
+                                            className={`option-card w-full text-left p-5 ${isSelected ? 'selected' : ''}`}
+                                        >
+                                            <div className="flex items-center gap-4">
+                                                <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all ${isSelected ? 'border-purple-600 bg-purple-600' : 'border-gray-300'
+                                                    }`}>
+                                                    {isSelected && <div className="w-3 h-3 rounded-full bg-white" />}
+                                                </div>
+                                                <div className="flex items-center gap-3 flex-1">
+                                                    <span className="font-bold text-gray-500 dark:text-gray-400 text-base">{opt.id}</span>
+                                                    <span className={`font-medium text-sm ${isSelected ? 'text-gray-900 dark:text-white' : 'text-gray-700 dark:text-gray-300'}`}>
+                                                        {opt.text}
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <div className="flex items-center gap-3 flex-1">
-                                                <span className="font-bold text-gray-500 dark:text-gray-400 text-base">{opt.id}</span>
-                                                <span className={`font-medium text-sm ${isSelected ? 'text-gray-900 dark:text-white' : 'text-gray-700 dark:text-gray-300'}`}>
-                                                    {opt.text}
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </button>
-                                );
-                            })}
+                                        </button>
+                                    );
+                                })
+                            ) : (
+                                <div className="p-8 border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-xl text-center">
+                                    <p className="text-gray-500 dark:text-gray-400">
+                                        {currentQ.type === 'text'
+                                            ? 'Please write your answer and submit. (Rich text editor or input area coming soon)'
+                                            : 'No options available for this question.'}
+                                    </p>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

@@ -265,8 +265,8 @@ export default function CandidateDashboard() {
                             </div>
                         ) : (
                             <div className="grid gap-4">
-                                {visiblePastResults.map((result, idx) => (
-                                    <div key={idx} className="card-premium p-6">
+                                {visiblePastResults.map((result) => (
+                                    <div key={result.assessment_id} className="card-premium p-6">
                                         <div className="flex justify-between items-center">
                                             <div>
                                                 <h3 className="font-bold text-gray-900 dark:text-white mb-1">{result.assessment_title}</h3>

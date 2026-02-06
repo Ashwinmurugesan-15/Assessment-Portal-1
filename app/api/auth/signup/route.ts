@@ -9,6 +9,7 @@ export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
         const { name, email, password, role } = body;
+        console.log('[SIGNUP DEBUG] Received signup request for email:', email);
 
         // Validate input (password is now optional as it can be auto-generated)
         if (!name || !email || !role) {
@@ -98,10 +99,19 @@ export async function POST(request: NextRequest) {
         `;
 
         try {
-            await sendEmail(email, emailSubject, emailHtml);
-        } catch (emailError) {
-            console.error('Failed to send invitation email:', emailError);
-            // We don't fail the request if email fails, but we log it
+            console.log('[SIGNUP DEBUG] About to send email to:', email);
+            const emailResult = await sendEmail(email, emailSubject, emailHtml);
+            console.log('[SIGNUP DEBUG] Email send result:', emailResult);
+        } catch (emailError: any) {
+            console.error('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.error('❌ FAILED TO SEND INVITATION EMAIL');
+            console.error('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.error('Recipient:', email);
+            console.error('Error message:', emailError.message);
+            console.error('Error code:', emailError.code);
+            console.error('Full error:', emailError);
+            console.error('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            // We don't fail the request if email fails, but we log it prominently
         }
 
         // Return user without password

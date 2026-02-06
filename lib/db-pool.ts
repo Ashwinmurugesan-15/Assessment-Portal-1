@@ -11,6 +11,11 @@ const pool = new Pool({
     connectionTimeoutMillis: config.database.connectionTimeout,
 });
 
+// Set search_path for all connections to use assessment_schema
+pool.on('connect', (client) => {
+    client.query('SET search_path TO assessment_schema, public');
+});
+
 // Initialize database schema
 export async function initializeDatabase() {
     const client = await pool.connect();
