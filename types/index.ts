@@ -133,3 +133,24 @@ export interface AdminAnalytics {
     assessment_id: string;
     admin_analytics: AdminAnalyticsData;
 }
+
+// Learning Resource types
+export interface LearningResource {
+    id: string;
+    title: string;
+    description: string;
+    course_url: string;
+    url_type: 'youtube' | 'generic';
+    image_url?: string;
+    created_by: string;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface LearningProgress {
+    id: string;
+    user_id: string;
+    resource_id: string;
+    viewed_at: string;
+    updated_at: string;
+}

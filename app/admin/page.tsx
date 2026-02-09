@@ -127,6 +127,13 @@ export default function AdminDashboard() {
                                     Create Assessment
                                 </Link>
                                 <Link
+                                    href="/admin/learning"
+                                    className="px-4 py-2 bg-white dark:bg-gray-800 border border-green-200 dark:border-green-700 text-green-700 dark:text-green-400 text-sm font-semibold rounded-lg hover:bg-green-50 dark:hover:bg-green-900/30 transition-all flex items-center gap-2 shadow-sm"
+                                >
+                                    <BookOpen size={18} />
+                                    Learning Resources
+                                </Link>
+                                <Link
                                     href="/admin/users"
                                     className="px-4 py-2 bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 text-purple-700 dark:text-purple-400 text-sm font-semibold rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/30 transition-all flex items-center gap-2 shadow-sm"
                                 >

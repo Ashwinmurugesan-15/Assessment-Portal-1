@@ -137,6 +137,13 @@ export default function CandidateDashboard() {
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">Welcome, {user.name} • {user.email}</p>
                             </div>
                             <div className="flex items-center gap-3">
+                                <Link
+                                    href="/candidate/learning"
+                                    className="px-4 py-2 bg-white dark:bg-gray-800 border-2 border-green-300 dark:border-green-700 text-green-700 dark:text-green-400 font-semibold rounded-xl hover:bg-green-50 dark:hover:bg-green-900/30 transition-all flex items-center gap-2"
+                                >
+                                    <BookOpen size={18} />
+                                    Learning Resources
+                                </Link>
                                 <ThemeToggle />
                                 <button
                                     onClick={handleLogout}

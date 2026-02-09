@@ -10,7 +10,8 @@ const config: Config = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["var(--font-poppins)", "sans-serif"],
+                sans: ["var(--font-inter)", "sans-serif"],
+                brand: ["'Zalando Sans Expanded'", "sans-serif"],
             },
             colors: {
                 border: "hsl(var(--border))",

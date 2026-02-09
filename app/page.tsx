@@ -127,7 +127,7 @@ export default function LoginPage() {
                         className="h-16 w-auto mx-auto mb-4 object-contain dark:brightness-0 dark:invert"
                         priority
                     />
-                    <h1 className="text-2xl font-bold text-[#1e293b] dark:text-white mb-1 tracking-tight">
+                    <h1 className="text-2xl md:text-3xl font-brand font-extralight text-[#1e293b] dark:text-white mb-2 tracking-tight">
                         VinavalAI
                     </h1>
                     <p className="text-[#64748b] dark:text-gray-400 text-sm">

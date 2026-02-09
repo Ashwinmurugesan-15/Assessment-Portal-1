@@ -1,5 +1,6 @@
 import pool from './db-pool';
 import { QuestionWithAnswer, GradingResult, User, Candidate, Examiner, Admin } from '@/types';
+import { v4 as uuidv4 } from 'uuid';
 
 interface AssessmentData {
     assessment_id: string;
@@ -377,5 +378,103 @@ export const db = {
         const query = 'DELETE FROM assessments WHERE assessment_id = $1';
         await pool.query(query, [id]);
         return true;
+    },
+
+    // Learning Resources Management
+    createLearningResource: async (resource: {
+        id: string;
+        title: string;
+        description: string;
+        course_url: string;
+        url_type: 'youtube' | 'generic';
+        image_url?: string;
+        created_by: string;
+    }) => {
+        const query = `
+            INSERT INTO learning_resources (id, title, description, course_url, url_type, image_url, created_by, created_at, updated_at)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+            RETURNING *
+        `;
+        const now = new Date().toISOString();
+        const values = [
+            resource.id,
+            resource.title,
+            resource.description,
+            resource.course_url,
+            resource.url_type,
+            resource.image_url || null,
+            resource.created_by,
+            now,
+            now
+        ];
+        const result = await pool.query(query, values);
+        return result.rows[0];
+    },
+
+    getAllLearningResources: async () => {
+        const query = 'SELECT * FROM learning_resources ORDER BY created_at DESC';
+        const result = await pool.query(query);
+        return result.rows;
+    },
+
+    getLearningResource: async (id: string) => {
+        const query = 'SELECT * FROM learning_resources WHERE id = $1';
+        const result = await pool.query(query, [id]);
+        return result.rows[0] || null;
+    },
+
+    updateLearningResource: async (id: string, updates: {
+        title?: string;
+        description?: string;
+        course_url?: string;
+        url_type?: 'youtube' | 'generic';
+        image_url?: string;
+    }) => {
+        const fields = Object.keys(updates);
+        const values = Object.values(updates);
+
+        if (fields.length === 0) return null;
+
+        const setClause = fields.map((field, index) => `${field} = $${index + 2}`).join(', ');
+        const query = `
+            UPDATE learning_resources 
+            SET ${setClause}, updated_at = $${fields.length + 2}
+            WHERE id = $1 
+            RETURNING *
+        `;
+
+        const result = await pool.query(query, [id, ...values, new Date().toISOString()]);
+        return result.rows[0] || null;
+    },
+
+    deleteLearningResource: async (id: string) => {
+        const query = 'DELETE FROM learning_resources WHERE id = $1';
+        await pool.query(query, [id]);
+        return true;
+    },
+
+    // Learning Analytics
+    recordLearningView: async (userId: string, resourceId: string) => {
+        const query = `
+            INSERT INTO learning_progress (id, user_id, resource_id, viewed_at, updated_at)
+            VALUES ($1, $2, $3, NOW(), NOW())
+            ON CONFLICT (user_id, resource_id) 
+            DO UPDATE SET updated_at = NOW()
+            RETURNING *
+        `;
+        const result = await pool.query(query, [uuidv4(), userId, resourceId]);
+        return result.rows[0];
+    },
+
+    getResourceViewers: async (resourceId: string) => {
+        const query = `
+            SELECT u.name, lp.viewed_at
+            FROM learning_progress lp
+            JOIN users u ON lp.user_id = u.id
+            WHERE lp.resource_id = $1
+            ORDER BY lp.viewed_at DESC
+        `;
+        const result = await pool.query(query, [resourceId]);
+        return result.rows;
     }
 };
