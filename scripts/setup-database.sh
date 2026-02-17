@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ============================================================
 # Database Setup Script
-# Purpose: Execute DDL and Insert scripts in correct order
+# Purpose: Execute DDL, Seed, and DML scripts in correct order
+# Documentation: scripts/DATABASE_SCRIPTS.md
 # ============================================================
 
 set -e  # Exit on any error
@@ -14,55 +14,48 @@ echo ""
 
 # Database configuration
 DB_NAME="assessment_engine"
-DB_USER="postgres"
+DB_HOST="${DB_HOST:-localhost}"
+DB_PORT="${DB_PORT:-5432}"
+DB_SUPERUSER="${DB_SUPERUSER:-postgres}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "📋 Configuration:"
 echo "   Database: $DB_NAME"
-echo "   Scripts Directory: $SCRIPT_DIR"
+echo "   Host: $DB_HOST"
+echo "   Port: $DB_PORT"
+echo "   Superuser: $DB_SUPERUSER"
 echo ""
+
+# Determine command
+if [ "$DB_HOST" = "localhost" ] && [ "$DB_PORT" = "5432" ] && [ "$DB_SUPERUSER" = "postgres" ]; then
+    CMD="sudo -u postgres psql"
+else
+    CMD="psql -h $DB_HOST -p $DB_PORT -U $DB_SUPERUSER"
+fi
 
 # Step 1: Execute DDL Script
-echo "🔧 Step 1: Executing DDL Script..."
-echo "   Purpose: Create user, schema, and tables"
-echo ""
+echo "🔧 Step 1: Executing DDL Script (Structure)..."
+$CMD -d "$DB_NAME" -f "$SCRIPT_DIR/ddl/ddl.sql"
 
-sudo -u postgres psql -d "$DB_NAME" -f "$SCRIPT_DIR/ddl.sql"
+# Step 2: Execute Seed Data Script
+echo ""
+echo "🌱 Step 2: Executing Seed Data (Starter Data)..."
+PGPASSWORD='assessment_pass_2024' psql -h "$DB_HOST" -p "$DB_PORT" -U assessment_app_user -d "$DB_NAME" -f "$SCRIPT_DIR/seeddata/seed_data.sql"
+
+# Step 3: Execute DML Script
+echo ""
+echo "✍️ Step 3: Executing DML Script (Business Data)..."
+PGPASSWORD='assessment_pass_2024' psql -h "$DB_HOST" -p "$DB_PORT" -U assessment_app_user -d "$DB_NAME" -f "$SCRIPT_DIR/dml/dml.sql"
 
 if [ $? -eq 0 ]; then
-    echo "✅ DDL Script executed successfully!"
-else
-    echo "❌ DDL Script failed!"
-    exit 1
-fi
-
-echo ""
-echo "========================================"
-echo ""
-
-# Step 2: Execute Insert Script  
-echo "📝 Step 2: Executing Insert Script..."
-echo "   Purpose: Insert sample data"
-echo ""
-
-# Run as the dedicated user
-PGPASSWORD='assessment_pass_2024' psql -U assessment_app_user -d "$DB_NAME" -f "$SCRIPT_DIR/insert.sql"
-
-if [ $? -eq 0 ]; then
-    echo "✅ Insert Script executed successfully!"
-else
-    echo "❌ Insert Script failed!"
-    exit 1
-fi
-
-echo ""
-echo "========================================"
-echo "✅ Database Setup Complete!"
-echo "========================================"
+    echo ""
+    echo "========================================"
+    echo "✅ Database Setup Complete!"
+    echo "========================================"
 echo ""
 echo "📝 Next Steps:"
 echo "1. Update your .env.local file with:"
-echo "   DATABASE_URL=postgresql://assessment_app_user:assessment_pass_2024@localhost:5432/assessment_engine?schema=assessment_schema"
+echo "   DATABASE_URL=postgresql://assessment_app_user:assessment_pass_2024@localhost:5432/assessment_engine?schema=VinavalAI_schema"
 echo ""
 echo "2. Restart your application:"
 echo "   npm run dev"

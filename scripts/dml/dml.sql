@@ -4,7 +4,7 @@
 -- Run as: assessment_app_user (NOT postgres)
 -- ============================================================
 
-SET search_path TO assessment_schema, public;
+SET search_path TO VinavalAI_schema, public;
 
 -- ============================================================
 -- STEP 1: Insert Sample Users
@@ -12,7 +12,7 @@ SET search_path TO assessment_schema, public;
 -- Note: Passwords are bcrypt hashed (plaintext shown in comments)
 
 -- Admin User
-INSERT INTO assessment_schema.users (id, name, email, password, role, created_at, is_first_login)
+INSERT INTO VinavalAI_schema.VinavalAI_users (id, name, email, password, role, created_at, is_first_login)
 VALUES (
     'admin-001',
     'Admin User',
@@ -24,7 +24,7 @@ VALUES (
 ) ON CONFLICT (email) DO NOTHING;
 
 -- Examiner Users
-INSERT INTO assessment_schema.users (id, name, email, password, role, created_at, is_first_login, created_assessments)
+INSERT INTO VinavalAI_schema.VinavalAI_users (id, name, email, password, role, created_at, is_first_login, created_assessments)
 VALUES 
 (
     'examiner-001',
@@ -59,7 +59,7 @@ VALUES
 ON CONFLICT (email) DO NOTHING;
 
 -- Candidate Users
-INSERT INTO assessment_schema.users (id, name, email, password, role, created_at, is_first_login, assigned_assessments)
+INSERT INTO VinavalAI_schema.VinavalAI_users (id, name, email, password, role, created_at, is_first_login, assigned_assessments)
 VALUES 
 (
     'candidate-001',
@@ -108,7 +108,7 @@ ON CONFLICT (email) DO NOTHING;
 -- ============================================================
 
 -- Assessment 1: Easy JavaScript Basics
-INSERT INTO assessment_schema.assessments (
+INSERT INTO VinavalAI_schema.assessments (
     assessment_id, title, description, difficulty, questions, created_by, created_at, 
     duration_minutes, assigned_to
 )
@@ -144,7 +144,7 @@ VALUES (
 ) ON CONFLICT (assessment_id) DO NOTHING;
 
 -- Assessment 2: Medium React Concepts
-INSERT INTO assessment_schema.assessments (
+INSERT INTO VinavalAI_schema.assessments (
     assessment_id, title, description, difficulty, questions, created_by, created_at, 
     duration_minutes, assigned_to
 )
@@ -186,7 +186,7 @@ VALUES (
 ) ON CONFLICT (assessment_id) DO NOTHING;
 
 -- Assessment 3: Medium Node.js Backend
-INSERT INTO assessment_schema.assessments (
+INSERT INTO VinavalAI_schema.assessments (
     assessment_id, title, description, difficulty, questions, created_by, created_at, 
     duration_minutes, assigned_to
 )
@@ -222,7 +222,7 @@ VALUES (
 ) ON CONFLICT (assessment_id) DO NOTHING;
 
 -- Assessment 4: Hard TypeScript Advanced
-INSERT INTO assessment_schema.assessments (
+INSERT INTO VinavalAI_schema.assessments (
     assessment_id, title, description, difficulty, questions, created_by, created_at, 
     duration_minutes, assigned_to
 )
@@ -258,7 +258,7 @@ VALUES (
 ) ON CONFLICT (assessment_id) DO NOTHING;
 
 -- Assessment 5: Hard Database Design
-INSERT INTO assessment_schema.assessments (
+INSERT INTO VinavalAI_schema.assessments (
     assessment_id, title, description, difficulty, questions, created_by, created_at, 
     duration_minutes, assigned_to
 )
@@ -298,7 +298,7 @@ VALUES (
 -- ============================================================
 
 -- Result 1: Alice completed JavaScript assessment
-INSERT INTO assessment_schema.results (assessment_id, user_id, result, timestamp)
+INSERT INTO VinavalAI_schema.results (assessment_id, user_id, result, timestamp)
 VALUES (
     'assessment-001',
     'candidate-001',
@@ -317,7 +317,7 @@ VALUES (
 );
 
 -- Result 2: Bob completed JavaScript assessment
-INSERT INTO assessment_schema.results (assessment_id, user_id, result, timestamp)
+INSERT INTO VinavalAI_schema.results (assessment_id, user_id, result, timestamp)
 VALUES (
     'assessment-001',
     'candidate-002',
@@ -336,7 +336,7 @@ VALUES (
 );
 
 -- Result 3: Alice completed React assessment
-INSERT INTO assessment_schema.results (assessment_id, user_id, result, timestamp)
+INSERT INTO VinavalAI_schema.results (assessment_id, user_id, result, timestamp)
 VALUES (
     'assessment-002',
     'candidate-001',
@@ -360,7 +360,7 @@ VALUES (
 -- ============================================================
 
 -- Create learning_resources table if it doesn't exist in the schema
-CREATE TABLE IF NOT EXISTS assessment_schema.learning_resources (
+CREATE TABLE IF NOT EXISTS VinavalAI_schema.learning_resources (
     id VARCHAR(255) PRIMARY KEY,
     title VARCHAR(500) NOT NULL,
     description TEXT NOT NULL,
@@ -369,15 +369,15 @@ CREATE TABLE IF NOT EXISTS assessment_schema.learning_resources (
     created_by VARCHAR(255) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (created_by) REFERENCES assessment_schema.users(id) ON DELETE CASCADE
+    FOREIGN KEY (created_by) REFERENCES VinavalAI_schema.VinavalAI_users(id) ON DELETE CASCADE
 );
 
 -- Create indexes for learning resources
-CREATE INDEX IF NOT EXISTS idx_learning_resources_created_by ON assessment_schema.learning_resources(created_by);
-CREATE INDEX IF NOT EXISTS idx_learning_resources_created_at ON assessment_schema.learning_resources(created_at);
+CREATE INDEX IF NOT EXISTS idx_learning_resources_created_by ON VinavalAI_schema.learning_resources(created_by);
+CREATE INDEX IF NOT EXISTS idx_learning_resources_created_at ON VinavalAI_schema.learning_resources(created_at);
 
 -- Insert learning resources
-INSERT INTO assessment_schema.learning_resources (id, title, description, course_url, url_type, created_by)
+INSERT INTO VinavalAI_schema.learning_resources (id, title, description, course_url, url_type, created_by)
 VALUES 
 (
     'resource-001',
@@ -431,10 +431,10 @@ DECLARE
     result_count INTEGER;
     resource_count INTEGER;
 BEGIN
-    SELECT COUNT(*) INTO user_count FROM assessment_schema.users;
-    SELECT COUNT(*) INTO assessment_count FROM assessment_schema.assessments;
-    SELECT COUNT(*) INTO result_count FROM assessment_schema.results;
-    SELECT COUNT(*) INTO resource_count FROM assessment_schema.learning_resources;
+    SELECT COUNT(*) INTO user_count FROM VinavalAI_schema.VinavalAI_users;
+    SELECT COUNT(*) INTO assessment_count FROM VinavalAI_schema.assessments;
+    SELECT COUNT(*) INTO result_count FROM VinavalAI_schema.results;
+    SELECT COUNT(*) INTO resource_count FROM VinavalAI_schema.learning_resources;
     
     RAISE NOTICE '========================================';
     RAISE NOTICE 'Insert Script Execution Complete!';
